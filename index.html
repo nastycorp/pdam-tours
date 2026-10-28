@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://images.unsplash.com">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
-  <link rel="icon" type="image/png" href="assets/Emblema del motociclista veloz.png">
 </head>
 <body>
   <div class="announcement">COLOMBIA SE DESCUBRE MEJOR SOBRE DOS RUEDAS</div>
@@ -152,6 +151,7 @@
           <label>Nombre completo<input name="name" required autocomplete="name" placeholder="¿Cómo se llama?"></label>
           <label>Correo electrónico<input name="email" type="email" required autocomplete="email" placeholder="usted@correo.com"></label>
         </div>
+        <label>WhatsApp de contacto<input name="phone" type="tel" required autocomplete="tel" placeholder="Ej. +57 300 123 4567"></label>
         <div class="form-row">
           <label>¿Qué le interesa?
             <select name="type" required>
@@ -172,8 +172,8 @@
         </label>
         <label>Cuéntenos un poco más<textarea name="message" rows="4" placeholder="Fecha tentativa, tipo de moto, idea de viaje o cualquier pregunta..."></textarea></label>
         <label class="consent"><input type="checkbox" required name="consent"><span>Acepto que se utilicen estos datos para responder mi solicitud. Antes de publicar el formulario, PDAM deberá enlazar aquí su política de tratamiento de datos.</span></label>
-        <button class="button form-submit" type="submit">Preparar solicitud <span>↗</span></button>
-        <p class="form-hint">En esta versión de muestra, el botón prepara un mensaje para enviar por WhatsApp. No se almacenan datos ni se realiza ningún pago desde esta página.</p>
+        <button class="button form-submit" type="submit">Enviar solicitud <span>↗</span></button>
+        <p class="form-hint">La solicitud se guardará para que podamos contactarle. No constituye una reserva ni confirma un cupo o pago.</p>
         <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
       </form>
     </section>
