@@ -45,3 +45,13 @@ La imagen panorámica de la portada está guardada en `assets/pdam-hero.png` y s
 - Desierto de la Tatacoa: $699.000 tentativos, 11–13 de diciembre de 2026.
 
 Los botones actuales llevan a las fichas o al formulario de interés; no son enlaces de pago reales. Para cobrar en línea se debe configurar una pasarela como Wompi, con backend, firma de integridad y validación de pagos.
+
+
+## Páginas de privacidad de PDAM
+- `politica-privacidad.html`: política de tratamiento de datos personales.
+- `eliminacion-de-datos.html`: instrucciones para solicitar acceso, corrección o eliminación de datos.
+- `legal.css`: estilos de ambas páginas.
+
+Los formularios de la página principal y de cada tour muestran un consentimiento obligatorio y abren WhatsApp con una constancia de autorización. Los mensajes que lleguen al WhatsApp Business pueden ser procesados por la integración de PDAM con Supabase y Airtable, según se explica en la política.
+
+La política incluye el correo de contacto `padondeapuntelamoto@gmail.com` y la dirección para notificaciones suministrada por el responsable. Antes de publicar, verifique que la dirección esté escrita exactamente como desea hacerla pública. El ZIP no contiene claves, tokens ni archivos `.env`.

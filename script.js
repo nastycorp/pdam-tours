@@ -64,7 +64,8 @@ requestForm.addEventListener("submit", (event) => {
     `Tamaño del grupo: ${data.get("people")}`,
     `Destino o idea: ${data.get("destination") || "Por definir"}`,
     `Grabación de video: ${data.get("video")}`,
-    `Detalles: ${data.get("message") || "Sin detalles adicionales"}`
+    `Detalles: ${data.get("message") || "Sin detalles adicionales"}`,
+    "Autorización para tratamiento de datos: otorgada mediante el formulario de PDAM."
   ];
   const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`;
   formStatus.textContent = "Se abrirá WhatsApp con la solicitud preparada. Revise el mensaje antes de enviarlo.";

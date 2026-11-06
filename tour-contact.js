@@ -14,7 +14,8 @@ document.querySelectorAll('.tour-contact-form').forEach((form) => {
       `Precio publicado: ${precio} por persona`,
       `Nombre: ${nombre}`,
       `Mi número de WhatsApp: ${telefono}`,
-      '¿Hay cupos disponibles y me pueden confirmar los detalles?'
+      '¿Hay cupos disponibles y me pueden confirmar los detalles?',
+      'Autorización para tratamiento de datos: otorgada mediante el formulario de PDAM.'
     ].join('\n');
     const url = `https://wa.me/573245929902?text=${encodeURIComponent(mensaje)}`;
     window.open(url, '_blank', 'noopener,noreferrer');

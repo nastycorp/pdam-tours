@@ -51,7 +51,9 @@
 /* Formulario de interés en cada plan */
 .tour-contact{margin-top:24px;padding:22px;background:#f2f0e6;border:1px solid #dedbcf}.tour-contact h2{font-size:clamp(1.9rem,3vw,2.6rem);margin:0 0 12px}.tour-contact>p{font-size:.8rem;color:#66695f;line-height:1.7}.tour-contact-form{display:grid;gap:14px}.tour-contact-form label{display:grid;gap:6px;font-size:.75rem;font-weight:700}.tour-contact-form input{width:100%;padding:12px;border:1px solid #c9c8bd;background:#fffdf6;color:#11130f;font:inherit;font-size:.85rem}.tour-contact-form input:focus{outline:2px solid #b6242b;outline-offset:1px}.tour-contact-form .form-submit{margin-top:4px}.tour-contact-form .form-hint{font-size:.68rem;color:#686a61;line-height:1.6;margin:0}
 
-/* Fechas de próximas rodadas: prioridad visual */
-.tour-meta{align-items:center;gap:10px}
-.tour-meta span:last-child{font-size:clamp(1rem,1.35vw,1.3rem);letter-spacing:.015em;line-height:1.15;color:#b6242b;background:#f4e5e3;padding:8px 10px;font-weight:900;white-space:nowrap}
-@media(max-width:760px){.tour-meta span:last-child{font-size:1.15rem;padding:8px 10px}}
+
+/* Aviso de autorización en formularios */
+.consent a,.tour-consent a{color:#a91f27;text-decoration:underline;text-underline-offset:2px}
+.tour-consent{display:flex;align-items:flex-start;gap:9px;margin:5px 0 2px;font-size:.68rem!important;font-weight:400!important;line-height:1.6;color:#5c5f55}
+.tour-consent input{flex:0 0 auto;margin:4px 0 0;accent-color:#b6242b}
+.tour-consent span{display:block}
