@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "api/solicitudes.js": {
-      "maxDuration": 10
-    }
-  },
   "redirects": [
     {
       "source": "/tour-manai.html",
