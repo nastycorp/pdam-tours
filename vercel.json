@@ -1,5 +1,24 @@
 {
   "functions": {
-    "api/solicitudes.js": { "maxDuration": 10 }
-  }
+    "api/solicitudes.js": {
+      "maxDuration": 10
+    }
+  },
+  "redirects": [
+    {
+      "source": "/tour-manai.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tour-villa-de-leyva.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tour-tatacoa.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
 }
