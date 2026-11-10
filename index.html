@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101114">
-  <meta name="description" content="PDAM – Pa' Donde Apunte la Moto. Motos, rutas, comparaciones, destinos y humor colombiano. Un canal independiente que cuenta lo que pasa en carretera, sin venderle la moto a nadie.">
+  <meta name="description" content="PDAM – Pa' Donde Apunte la Moto. Hablamos de motos, precios, garantías, comparaciones, tecnología y vida motera, con humor colombiano y criterio propio.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="PDAM | Pa' Donde Apunte la Moto">
-  <meta property="og:description" content="Motos, rutas y cuentos sin libreto. Opiniones, comparaciones, destinos y humor colombiano desde la carretera.">
+  <meta property="og:description" content="Precios, garantías, comparaciones, tecnología y vida motera. PDAM habla de motos sin tanta carreta.">
   <meta property="og:image" content="assets/pdam-hero.png">
   <title>PDAM | Pa' Donde Apunte la Moto — Medio independiente</title>
   <link rel="icon" type="image/png" href="assets/pdam-favicon.png">
@@ -22,11 +22,40 @@
 @media(max-width:360px){.topline span:last-child{font-size:.42rem}.metric strong{font-size:2.55rem}.metric{padding:16px 10px}.metric:first-child{padding-left:10px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 
+  
+/* PDAM editorial update: motorcycle market, opinion and everyday rider culture */
+.channel-note{margin-top:34px;padding:25px 28px;background:#1b1d22;border-left:3px solid var(--red);max-width:900px}
+.channel-note strong{font:800 1.45rem var(--display);letter-spacing:.015em;text-transform:uppercase}
+.channel-note p{margin:9px 0 0;color:#c4c6cc;font-size:.78rem;line-height:1.8}
+.topic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:40px 0 82px}
+.topic-card{min-height:205px;padding:28px;background:#1b1d22;border:1px solid #34363c;border-top:3px solid var(--red);display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start}
+.topic-card-wide{grid-column:1/-1;min-height:160px}
+.topic-number{font-size:.58rem;letter-spacing:.15em;font-weight:800;color:var(--red)}
+.topic-card h3{margin:13px 0 9px;font:800 2rem/.98 var(--display);text-transform:uppercase}
+.topic-card p{max-width:650px;margin:0;color:#c0c2c9;font-size:.78rem;line-height:1.75}
+.recent-videos{padding-top:10px}
+.recent-videos-heading{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:32px}
+.recent-videos-heading .eyebrow{margin-bottom:18px}
+.recent-videos-heading h2{margin:0;font:800 clamp(2.6rem,5vw,4.8rem)/.94 var(--display);text-transform:uppercase}
+.recent-videos-heading h2 em{font-style:normal;color:var(--red)}
+.recent-videos-heading>p{max-width:345px;color:#b9bbc2;font-size:.8rem;line-height:1.8;margin:0 0 4px}
+.video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.video-card{display:flex;flex-direction:column;min-width:0;background:#1b1d22;border:1px solid #33353b;transition:transform .2s,border-color .2s}
+.video-card:hover{transform:translateY(-3px);border-color:var(--red)}
+.video-card img{width:100%;aspect-ratio:16/9;object-fit:cover;background:#303238}
+.video-card>span{margin:17px 17px 0;color:var(--red);font-size:.54rem;letter-spacing:.13em;font-weight:800}
+.video-card h3{margin:8px 17px 14px;font:700 1.35rem/1.08 var(--display);text-transform:uppercase}
+.video-card small{margin:auto 17px 17px;padding-top:5px;color:#c4c6cc;font-size:.62rem;font-weight:700}
+.videos-note{margin:19px 0 0;color:#81848c;font-size:.61rem;line-height:1.6}
+@media(max-width:900px){.video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.recent-videos-heading{gap:24px}}
+@media(max-width:680px){.topic-grid{grid-template-columns:1fr;margin:28px 0 60px}.topic-card,.topic-card-wide{grid-column:auto;min-height:0;padding:23px}.topic-card h3{font-size:1.75rem}.recent-videos-heading{display:grid;grid-template-columns:1fr;gap:15px}.video-grid{grid-template-columns:1fr 1fr;gap:10px}.video-card h3{font-size:1.1rem;margin-left:12px;margin-right:12px}.video-card>span{margin-left:12px;margin-right:12px;font-size:.48rem}.video-card small{margin-left:12px;margin-right:12px}.channel-note{padding:22px 20px}}
+@media(max-width:420px){.video-grid{grid-template-columns:1fr}}
+
   </style>
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="topline"><span>COLOMBIA</span><span>MOTOS · RUTAS · OPINIONES · HUMOR SIN LIBRETO</span></div>
+  <div class="topline"><span>COLOMBIA</span><span>MOTOS · MERCADO · VIDA MOTERA · HUMOR SIN LIBRETO</span></div>
   <header class="site-header">
     <a class="brand" href="#inicio" aria-label="PDAM, inicio">
       <span class="brand-symbol"><img src="assets/pdam-favicon.png" alt=""></span>
@@ -36,10 +65,11 @@
     <nav class="main-nav" aria-label="Navegación principal">
       <a href="#medio">PDAM</a>
       <a href="#comunidad">Comunidad</a>
-      <a href="#contenido">Contenido</a>
+      <a href="#contenido">Temas</a>
+      <a href="#videos">Videos</a>
       <a href="#alianzas">Colaboraciones</a>
     </nav>
-    <a class="button button-small header-cta" href="#contacto">Invitar a PDAM <span>↗</span></a>
+    <a class="button button-small header-cta" href="#contacto">Hablemos <span>↗</span></a>
   </header>
 
   <main>
@@ -48,44 +78,42 @@
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <p class="eyebrow"><span></span> PA' DONDE APUNTE LA MOTO · SIN LIBRETO</p>
-        <h1>SALIMOS A RODAR.<br><em>VOLVEMOS CON CUENTO.</em></h1>
-        <p class="hero-copy">Salimos a rodar, miramos lo que hay y hablamos de ello sin ponerle moño. Motos, precios, rutas, destinos, accesorios y esas pequeñas tragedias nacionales que empiezan con un hueco en la vía y terminan buscando caldo de costilla.</p>
+        <h1>MOTOS.<br><em>SIN TANTA CARRETA.</em></h1>
+        <p class="hero-copy">Precios, garantías, comparaciones, tecnología, accesorios e historias de motociclistas. Hablamos de lo que las motos prometen, de lo que cuestan y de lo que pasa cuando uno las usa de verdad. También hay carretera, destinos y paradas para comer; pero aquí el tema es todo lo que gira alrededor de una moto.</p>
         <div class="hero-actions">
-          <a class="button" href="#medio">¿Qué es este cuento? <span>↘</span></a>
-          <a class="button button-outline" href="#contacto">Cuéntenos de su lugar <span>↗</span></a>
+          <a class="button" href="#medio">Así es PDAM <span>↘</span></a>
+          <a class="button button-outline" href="#contacto">Proponga una colaboración <span>↗</span></a>
         </div>
-        <div class="hero-meta"><span class="red-dot"></span> OPINIÓN PROPIA · HUMOR COLOMBIANO · CONTENIDO EN NUESTROS CANALES</div>
+        <div class="hero-meta"><span class="red-dot"></span> OPINIÓN PROPIA · HUMOR COLOMBIANO · MOTOS EN LA VIDA REAL</div>
       </div>
       <div class="hero-index">01 / UN MEDIO EN MOVIMIENTO</div>
     </section>
 
     <section class="statement-strip" aria-label="Lema de PDAM">
-      <span>NO TODO ES POSTAL.</span><strong>A VECES TAMBIÉN HAY HUECOS.</strong><span class="strip-mark">PDAM / SIN ADORNOS</span>
+      <span>LA MOTO PROMETE.</span><strong>EN PDAM PREGUNTAMOS.</strong><span class="strip-mark">PDAM / SIN TANTA CARRETA</span>
     </section>
 
     <section class="about section" id="medio">
       <div class="section-kicker"><span>01</span> QUIÉNES SOMOS</div>
       <div class="about-grid">
         <div>
-          <h2>No somos una postal con casco.<br><em>Somos el cuento completo.</em></h2>
+          <h2>No nos quedamos con la ficha técnica.<br><em>Ni con el cuento del vendedor.</em></h2>
         </div>
         <div class="about-copy">
-          <p class="lead">PDAM — Pa' Donde Apunte la Moto es un canal independiente que habla de motos, sale a recorrer Colombia y convierte lo que encuentra en historias.</p>
-          <p>Probamos, comparamos, preguntamos, opinamos y nos metemos por caminos que en el mapa se veían facilitos. Hablamos de precios sin hacerle reverencias a los logos, de destinos sin fingir que todo es perfecto y de la cultura motera como se vive: con emoción, discusiones, barro, tinto y, cuando se puede, una buena arepa.</p>
-          <p>El tono es cercano, irónico y colombiano. Aquí caben la Himalayan, el hueco de la carretera, la cuenta del taller, el hotel que prometía mucho y hasta el caldo de costilla que termina salvando la mañana. La idea es contar lo que pasa, no posar como catálogo de turismo.</p>
+          <p class="lead">PDAM — Pa' Donde Apunte la Moto es un canal que habla de motos desde el lado del motociclista, no desde el mostrador.</p>
+          <p>Aquí hablamos de garantías, precios, marcas, comparaciones, tecnología, accesorios, decisiones de compra y todo lo que puede hacer que una moto sea un negociazo… o una deuda con ruedas. Miramos la letra pequeña, ponemos las promesas a prueba y preguntamos lo que a veces nadie pregunta en el concesionario.</p>
+          <p>También hay viajes, destinos, personajes y anécdotas de carretera. Claro. Pero no somos una guía turística: nos interesa lo que vive, piensa, paga y disfruta el motociclista. Y si en el camino aparece un buen almuerzo, tampoco vamos a hacerle el feo.</p>
+          <p>Con humor colombiano, ironía y criterio propio. Porque una moto puede tener cuarenta caballos, pero eso no significa que el vendedor tenga razón.</p>
         </div>
       </div>
-      <div class="about-photo-row">
-        <figure class="about-photo"><img src="assets/manai-grupo-pdam.png" alt="Motociclistas compartiendo una experiencia en ruta" loading="lazy"><figcaption>GENTE, MOTOS Y CUENTOS DE CARRETERA</figcaption></figure>
-        <figure class="about-photo"><img src="assets/planeando-ruta-motociclistas.png" alt="Motociclistas planeando un recorrido" loading="lazy"><figcaption>HASTA LA PLANEADA TIENE SU HISTORIA</figcaption></figure>
-      </div>
+      <div class="channel-note"><strong>Viajar es parte del canal. No es todo el canal.</strong><p>Un día hablamos de una garantía, otro comparamos lo que cuesta una moto y lo que realmente entrega; otro nos vamos de viaje, paramos por un tinto y volvemos con una historia. La moto es el punto de encuentro.</p></div>
     </section>
 
     <section class="community section" id="comunidad">
       <div class="section-kicker"><span>02</span> NUESTRA COMUNIDAD</div>
       <div class="community-head">
-        <h2>La comunidad<br><em>no se mide solo en números.</em></h2>
-        <p>Aquí hay gente que pregunta por las motos, discute precios, recomienda rutas, cuenta sus viajes y sabe dónde se consigue un buen almuerzo después de rodar.</p>
+        <h2>Una comunidad que<br><em>no se traga el folleto.</em></h2>
+        <p>Motociclistas que preguntan, comparan, discuten precios, comparten experiencias y tienen criterio propio. Y que saben que comprar moto no es solamente escoger el color.</p>
       </div>
       <div class="metric-grid">
         <article class="metric"><span class="metric-platform">YOUTUBE</span><strong>5.110</strong><small>suscriptores</small></article>
@@ -103,25 +131,72 @@
     </section>
 
     <section class="content section" id="contenido">
-      <div class="section-kicker"><span>03</span> LO QUE CONTAMOS</div>
-      <div class="content-heading"><h2>De esto sí<br><em>hablamos en PDAM.</em></h2><p>Una semana podemos estar discutiendo si una moto justifica lo que cuesta; a la otra, preguntando quién tuvo la brillante idea de meterse por esa trocha. También hay destinos, equipo y gente con historias.</p></div>
-      <div class="content-grid">
-        <article class="content-card content-card-large">
-          <img src="assets/pdam-hero.png" alt="Motocicleta en un paisaje de viaje" loading="lazy">
-          <div class="content-card-shade"></div><div class="content-card-copy"><span>01 / KILÓMETROS Y REALIDAD</span><h3>Rutas sin filtro de postal</h3><p>Curvas, trochas, paisajes, hospedajes y paradas. Lo bueno, lo malo y lo que no sale en la foto de portada.</p></div>
+      <div class="section-kicker"><span>03</span> LOS TEMAS DEL CANAL</div>
+      <div class="content-heading">
+        <h2>La moto es el tema.<br><em>El mundo alrededor, también.</em></h2>
+        <p>La garantía, el precio, la ficha técnica, el accesorio milagroso, el paseo que salió bien y el que terminó en taller. De eso hablamos.</p>
+      </div>
+
+      <div class="topic-grid">
+        <article class="topic-card">
+          <span class="topic-number">01 / MERCADO Y COMPRAS</span>
+          <h3>Antes de soltar la plata</h3>
+          <p>Precios, garantías, marcas, costos escondidos y decisiones de compra. Porque la emoción de estrenar dura; la cuota, bastante más.</p>
         </article>
-        <article class="content-card">
-          <img src="assets/manai-cascada-postal.png" alt="Paisaje de cascada y destino natural" loading="lazy">
-          <div class="content-card-shade"></div><div class="content-card-copy"><span>02 / DESTINOS</span><h3>Lugares con cuento</h3><p>Pueblos, hoteles, restaurantes y rincones que vale la pena conocer. Y también cómo se llega, que eso importa.</p></div>
+        <article class="topic-card">
+          <span class="topic-number">02 / PRUEBAS Y COMPARACIONES</span>
+          <h3>La ficha técnica no maneja</h3>
+          <p>Qué ofrece cada moto, qué se siente al usarla y si la diferencia de precio se nota en la vida real. Los caballos se cuentan; las sensaciones se comprueban.</p>
         </article>
-        <article class="content-card">
-          <img src="assets/planeando-ruta-motociclistas.png" alt="Motociclistas reunidos para preparar un recorrido" loading="lazy">
-          <div class="content-card-shade"></div><div class="content-card-copy"><span>03 / VIDA MOTERA</span><h3>La conversación no se acaba</h3><p>Personajes, opiniones, anécdotas y debates que empiezan por una cilindrada y pueden terminar hablando del precio del corrientazo.</p></div>
+        <article class="topic-card">
+          <span class="topic-number">03 / EQUIPO Y TECNOLOGÍA</span>
+          <h3>¿Sirve o es otro chicharrón?</h3>
+          <p>ABS, pantallas, cascos, accesorios y tecnología. Revisamos qué ayuda de verdad y qué termina siendo un adorno caro que también necesita cargador.</p>
         </article>
-        <article class="content-card content-card-wide">
-          <img src="assets/tatacoa-postal.png" alt="Motociclista en paisaje desértico" loading="lazy">
-          <div class="content-card-shade"></div><div class="content-card-copy"><span>04 / SIN ARRODILLARSE ANTE EL LOGO</span><h3>Motos, pruebas y equipo</h3><p>Comparaciones, precios, accesorios y tecnología. Si algo sirve, se dice; si no convence, también. Para eso se prueba.</p></div>
+        <article class="topic-card">
+          <span class="topic-number">04 / CULTURA MOTERA</span>
+          <h3>El motociclista viene de todos los sabores</h3>
+          <p>Personajes, costumbres, discusiones, anécdotas y humor. Desde el que lleva herramientas para desarmar media moto hasta el que sale por pan y regresa el domingo.</p>
         </article>
+        <article class="topic-card topic-card-wide">
+          <span class="topic-number">05 / VIAJES Y CARRETERA</span>
+          <h3>Y sí, también salimos a conocer mundo</h3>
+          <p>Rutas, destinos, restaurantes, alojamientos y experiencias. La carretera es parte de PDAM, pero no es el único escenario: a veces la historia empieza en un concesionario y termina buscando caldo de costilla.</p>
+        </article>
+      </div>
+
+      <div class="recent-videos" id="videos">
+        <div class="recent-videos-heading">
+          <div><span class="eyebrow"><span></span> EL CANAL, SIN RESUMEN DE AGENCIA</span><h2>Estos son algunos<br><em>de nuestros cuentos recientes.</em></h2></div>
+          <p>Una muestra real de lo que la gente encuentra cuando llega a PDAM: preguntas incómodas, números, motos y la vida de quien las monta.</p>
+        </div>
+        <div class="video-grid">
+          <a class="video-card" href="https://www.youtube.com/watch?v=9MqGuEITSbM" target="_blank" rel="noopener noreferrer">
+            <img src="https://i.ytimg.com/vi/9MqGuEITSbM/hqdefault.jpg" alt="Miniatura del video Lo que nunca le dicen sobre la garantía de su moto" loading="lazy">
+            <span>GARANTÍAS · 3 NOV 2026</span><h3>Lo que nunca le dicen sobre la garantía de su moto</h3><small>Ver video ↗</small>
+          </a>
+          <a class="video-card" href="https://www.youtube.com/watch?v=V6BoB0v9DHE" target="_blank" rel="noopener noreferrer">
+            <img src="https://i.ytimg.com/vi/V6BoB0v9DHE/hqdefault.jpg" alt="Miniatura del video El engaño de los precios de motos en Colombia" loading="lazy">
+            <span>PRECIOS · 30 OCT 2026</span><h3>El engaño de los precios de motos en Colombia</h3><small>Ver video ↗</small>
+          </a>
+          <a class="video-card" href="https://www.youtube.com/watch?v=31vVCcNOPpg" target="_blank" rel="noopener noreferrer">
+            <img src="https://i.ytimg.com/vi/31vVCcNOPpg/hqdefault.jpg" alt="Miniatura del video El engaño de las deportivas de bajo cilindraje" loading="lazy">
+            <span>COMPARACIONES · 27 OCT 2026</span><h3>El engaño de las deportivas de bajo cilindraje</h3><small>Ver video ↗</small>
+          </a>
+          <a class="video-card" href="https://www.youtube.com/watch?v=W4FkbZ2RxZE" target="_blank" rel="noopener noreferrer">
+            <img src="https://i.ytimg.com/vi/W4FkbZ2RxZE/hqdefault.jpg" alt="Miniatura del video ¿Realmente necesita una pantalla en la moto?" loading="lazy">
+            <span>TECNOLOGÍA · 23 OCT 2026</span><h3>¿Realmente necesita una pantalla en la moto?</h3><small>Ver video ↗</small>
+          </a>
+          <a class="video-card" href="https://www.youtube.com/watch?v=mE85kNhwhkg" target="_blank" rel="noopener noreferrer">
+            <img src="https://i.ytimg.com/vi/mE85kNhwhkg/hqdefault.jpg" alt="Miniatura del video El engaño de las motos de aventura" loading="lazy">
+            <span>MOTOS DE AVENTURA · 20 OCT 2026</span><h3>El engaño de las motos de aventura</h3><small>Ver video ↗</small>
+          </a>
+          <a class="video-card" href="https://www.youtube.com/watch?v=WW856O2JzzY" target="_blank" rel="noopener noreferrer">
+            <img src="https://i.ytimg.com/vi/WW856O2JzzY/hqdefault.jpg" alt="Miniatura del video ¿Cómo planear un viaje en moto?" loading="lazy">
+            <span>VIAJES · 16 OCT 2026</span><h3>¿Cómo planear un viaje en moto? (La cruda realidad)</h3><small>Ver video ↗</small>
+          </a>
+        </div>
+        <p class="videos-note">Los títulos y miniaturas enlazan a publicaciones reales del canal. Esta selección muestra distintos temas de PDAM, no solamente viajes.</p>
       </div>
     </section>
 
@@ -164,7 +239,7 @@
 
   <footer class="site-footer">
     <a class="footer-brand" href="#inicio"><span class="footer-logo">PDAM</span><span>PA' DONDE APUNTE LA MOTO<br><small>MEDIO INDEPENDIENTE · COLOMBIA</small></span></a>
-    <p>Motos, rutas y cuentos sin libreto.<br>Con humor, criterio y sabor colombiano.</p>
+    <p>Motos, mercado y vida motera.<br>Con humor colombiano y criterio propio.</p>
     <div class="footer-links"><a href="politica-privacidad.html">Política de privacidad</a><a href="eliminacion-de-datos.html">Datos personales</a><a href="#inicio">Volver arriba ↑</a></div>
     <small class="copyright">© <span id="year"></span> PDAM · Pa' Donde Apunte la Moto.</small>
   </footer>
