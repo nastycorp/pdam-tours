@@ -51,6 +51,138 @@
 @media(max-width:680px){.topic-grid{grid-template-columns:1fr;margin:28px 0 60px}.topic-card,.topic-card-wide{grid-column:auto;min-height:0;padding:23px}.topic-card h3{font-size:1.75rem}.recent-videos-heading{display:grid;grid-template-columns:1fr;gap:15px}.video-grid{grid-template-columns:1fr 1fr;gap:10px}.video-card h3{font-size:1.1rem;margin-left:12px;margin-right:12px}.video-card>span{margin-left:12px;margin-right:12px;font-size:.48rem}.video-card small{margin-left:12px;margin-right:12px}.channel-note{padding:22px 20px}}
 @media(max-width:420px){.video-grid{grid-template-columns:1fr}}
 
+  
+/* PDAM comic-road identity: hand-painted planks, ink outlines, cartographic paper */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Rye&family=Patrick+Hand:wght@400&display=swap');
+:root{--ink:#17130e;--ink-2:#2a1d12;--paper:#f4e4bd;--paper-light:#fff2d3;--muted:#7a6850;--red:#c82619;--blue:#087ca5;--sky:#159cc5;--gold:#e5a33a;--line:rgba(32,22,12,.28);--display:'Bangers','Barlow Condensed',Impact,sans-serif;--body:'Patrick Hand','DM Sans',Arial,sans-serif}
+html{scroll-padding-top:95px}
+body{background:#dfcc9c;color:#21180f;font-family:var(--body);font-size:18px;background-image:radial-gradient(rgba(68,43,19,.14) .7px,transparent .7px);background-size:5px 5px}
+.topline{height:26px;background:#122e3b;color:#e8d7ad;font-family:var(--body);font-size:.75rem;letter-spacing:.12em}
+.site-header{background:linear-gradient(180deg,#75401e,#4b2817);border-bottom:4px solid #2d1a10;box-shadow:0 5px 0 rgba(0,0,0,.18)}
+.brand-symbol{border:3px solid #21150d;box-shadow:2px 3px 0 #c88e40}
+.brand-type strong{font-family:var(--display);font-size:2.1rem;letter-spacing:.04em;color:#fff0cb;text-shadow:2px 3px 0 #24140c}
+.brand-type small{color:#f7d28c;font-family:var(--body);font-size:.7rem;letter-spacing:.03em}
+.main-nav{gap:8px}
+.main-nav a{position:relative;padding:9px 15px;color:#28180d;font:1.05rem 'Rye',serif;background:linear-gradient(180deg,#e9bd72,#c98d42 55%,#9a5a29);border:2px solid #4b2815;box-shadow:inset 0 2px 0 rgba(255,242,194,.55),2px 3px 0 #24150d;clip-path:polygon(0 0,91% 0,100% 50%,91% 100%,0 100%,5% 50%)}
+.main-nav a:hover{background:linear-gradient(#ffe09a,#c98735);color:#20140c;transform:translateY(-2px)}
+.header-cta{background:#c5281d;border:3px solid #31180f;box-shadow:3px 4px 0 #26150d;font-family:var(--display);font-size:1.1rem;letter-spacing:.04em}
+.button{border:3px solid #301b0f;box-shadow:3px 4px 0 #2c1a10;font-family:var(--display);font-size:1.15rem;letter-spacing:.035em}
+.button:hover{background:#e2a239;border-color:#301b0f;color:#21160f}
+.button-outline{background:rgba(20,35,40,.72);border-color:#f7e7c3;color:#fff}
+.hero{min-height:680px;background:#0b769e;border-bottom:7px solid #22170e}
+.hero-photo{filter:saturate(1.45) contrast(1.12);background-position:center 53%}
+.hero-overlay{background:linear-gradient(90deg,rgba(8,27,34,.83),rgba(11,43,50,.40) 58%,rgba(21,31,27,.18)),linear-gradient(0deg,rgba(16,15,12,.66),transparent 55%)}
+.hero-content{max-width:760px;padding-top:84px}
+.eyebrow{font-family:'Rye',serif;color:#ffdfa0;letter-spacing:.08em;text-shadow:1px 2px 0 #1e130d}
+.hero h1{font-family:var(--display);letter-spacing:.015em;font-size:clamp(4.6rem,8vw,8.4rem);color:#fff0ce;text-shadow:4px 5px 0 #24160e,-2px -2px 0 #24160e,2px -2px 0 #24160e,-2px 2px 0 #24160e}
+.hero h1 em{color:#ffbd4a;text-shadow:4px 5px 0 #4a2110,-2px -2px 0 #4a2110,2px -2px 0 #4a2110,-2px 2px 0 #4a2110}
+.hero-copy{font-family:var(--body);font-size:1.25rem;line-height:1.4;color:#fff1d1;text-shadow:1px 2px 2px #24160e;max-width:570px}
+.hero-meta{font-family:'Rye',serif;color:#ffe5ad;font-size:.68rem;letter-spacing:.06em}
+.hero-index{font-family:'Rye',serif;color:#ffedc6}
+.road-signs{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(260px,.95fr);gap:5%;align-items:center;padding:48px 8% 54px;background:linear-gradient(180deg,#e8d5aa,#f3e5c2);border-bottom:6px solid #302014;overflow:hidden}
+.road-signs:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.28;background:repeating-linear-gradient(0deg,transparent 0 23px,rgba(88,51,22,.18) 24px,transparent 25px),radial-gradient(circle,rgba(25,120,150,.16) 0 2px,transparent 3px);background-size:auto,13px 13px}
+.road-sign-stack{position:relative;z-index:1;max-width:560px;padding:5px 0}
+.road-sign-post{position:absolute;z-index:0;left:calc(8% + 43px);top:26px;bottom:22px;width:23px;background:linear-gradient(90deg,#5b321a,#b97936 30%,#6d3b1c 65%,#3a2114);border:3px solid #2a170e;box-shadow:5px 4px 0 rgba(0,0,0,.19)}
+.road-sign{position:relative;z-index:1;display:grid;grid-template-columns:38px 1fr;grid-template-rows:auto auto;align-items:center;min-height:69px;width:100%;margin:9px 0;padding:8px 55px 8px 25px;color:#20140c;text-decoration:none;background:repeating-linear-gradient(0deg,rgba(55,30,13,.09) 0 2px,transparent 3px 8px),linear-gradient(180deg,#edc37a,#c99049 50%,#9b5f2d);border:3px solid #392013;box-shadow:inset 0 2px 0 rgba(255,231,174,.55),inset 0 -4px 0 rgba(69,36,15,.25),4px 5px 0 rgba(30,18,10,.45);clip-path:polygon(0 0,91% 0,100% 50%,91% 100%,0 100%,3% 50%);transform:rotate(-1deg)}
+.road-sign:nth-child(even){transform:rotate(1.2deg)}
+.road-sign span{grid-row:1/3;font:1rem 'Rye',serif;color:#f7db9a;text-shadow:1px 2px #3b2111}
+.road-sign strong{font:1.75rem/1 var(--display);letter-spacing:.03em;text-shadow:1px 1px rgba(255,224,157,.4)}
+.road-sign small{font:1rem/1.05 'Patrick Hand',cursive;color:#432713}
+.road-sign:hover{filter:brightness(1.12);transform:translateX(8px) rotate(0)}
+.road-sign-caption{position:relative;z-index:1;max-width:430px;padding:29px 30px;background:#fff0cb;border:3px solid #21170f;box-shadow:8px 8px 0 rgba(49,31,14,.25);transform:rotate(1.5deg);clip-path:polygon(2% 0,98% 2%,100% 94%,4% 100%,0 6%)}
+.road-sign-caption span{font:1rem 'Rye',serif;color:#a34f20}
+.road-sign-caption strong{display:block;margin:8px 0;font:2.5rem/.95 var(--display);color:#1d1711;text-transform:uppercase}
+.road-sign-caption small{font:1.2rem/1.35 'Patrick Hand',cursive;color:#43301d}
+.statement-strip{background:#b9291e;color:#fff0d0;border-top:4px solid #3b1c10;border-bottom:4px solid #3b1c10;font-family:var(--display);font-size:2rem;letter-spacing:.03em}
+.statement-strip strong{color:#ffe0a3}
+.section{max-width:none;padding:92px max(7%,calc((100% - 1250px)/2))}
+.about,.content,.contact{background:#f3e4bf;color:#21180f;border-bottom:5px solid #2e1d10}
+.section-kicker{font:1rem 'Rye',serif;color:#69431e;letter-spacing:.02em}
+.section-kicker span{font:1.3rem 'Bangers',sans-serif;color:#c02a1c}
+.about h2,.community h2,.content h2,.collab h2,.contact h2{font-family:var(--display);font-size:clamp(3rem,5.5vw,5.6rem);letter-spacing:.01em;text-shadow:2px 3px 0 rgba(95,58,20,.13)}
+.about h2 em,.community h2 em,.content h2 em,.collab h2 em,.contact h2 em{color:#c22a1d}
+.about-copy p{color:#4a3825;font:1.22rem/1.48 'Patrick Hand',cursive}
+.about-copy .lead{color:#20150e;font:1.45rem/1.27 'Rye',serif}
+.channel-note{background:#e5c990;border:3px solid #412917;border-left:10px solid #bb2b1d;box-shadow:5px 6px 0 rgba(60,36,16,.18)}
+.channel-note strong{font:2rem var(--display)}
+.channel-note p{color:#48321e;font:1.15rem/1.4 'Patrick Hand',cursive}
+.community{background:linear-gradient(160deg,#087da2,#07526f 72%,#103b48);color:#fff3d8;border-top:5px solid #2d1d11;border-bottom:5px solid #2d1d11}
+.community .section-kicker{color:#fff0cc}
+.community-head p{color:#fff0d2;font:1.18rem/1.45 'Patrick Hand',cursive}
+.metric-grid{border-color:rgba(255,239,205,.35)}
+.metric{border-color:rgba(255,239,205,.35)}
+.metric-platform{color:#ffd17c;font:1rem 'Rye',serif}
+.metric strong{font:3.9rem/.95 var(--display);text-shadow:2px 3px 0 rgba(0,0,0,.25)}
+.metric small{color:#fff0d0;font:1rem 'Patrick Hand',cursive}
+.performance{border:4px solid #2b190e;background:#21160f;box-shadow:7px 7px 0 rgba(0,0,0,.22)}
+.performance-label span{font:2rem var(--display);color:#ffdb98}
+.performance-label small{font:.85rem 'Rye',serif}
+.performance-stat strong{font:2.7rem var(--display);color:#ffbd4b}
+.performance-stat span{font:1rem 'Patrick Hand',cursive;color:#f3e4bf}
+.data-note{color:#d5c39d;font:.9rem 'Patrick Hand',cursive}
+.content{background:#e6d3a5}
+.content-heading>p{color:#4b3925;font:1.2rem/1.45 'Patrick Hand',cursive}
+.topic-grid{gap:18px}
+.topic-card{position:relative;min-height:225px;background:linear-gradient(145deg,#fff0cd,#e7c990);border:3px solid #2c1b10;border-top:9px solid #9c5f2a;box-shadow:6px 7px 0 rgba(60,35,14,.22);clip-path:polygon(1% 2%,98% 0,100% 96%,3% 100%,0 6%)}
+.topic-card:nth-child(even){transform:rotate(.45deg)}.topic-card:nth-child(odd){transform:rotate(-.35deg)}
+.topic-card-wide{background:linear-gradient(140deg,#d6e8dc,#a9d3ca);border-top-color:#1b5b4d}
+.topic-number{font:.9rem 'Rye',serif;color:#9e2d1c}
+.topic-card h3{font:2.35rem/.95 var(--display);color:#26180e;text-shadow:1px 2px rgba(118,68,25,.15)}
+.topic-card p{color:#49331e;font:1.18rem/1.38 'Patrick Hand',cursive}
+.recent-videos-heading h2{font-family:var(--display);color:#23170e}
+.recent-videos-heading>p{color:#493b2b;font:1.15rem/1.45 'Patrick Hand',cursive}
+.video-card{background:#fff0d0;border:3px solid #352012;box-shadow:5px 6px 0 rgba(43,25,11,.18)}
+.video-card:hover{border-color:#b22b1e;transform:translateY(-4px) rotate(-.5deg)}
+.video-card>span{font:.78rem 'Rye',serif;color:#ab2b1d}
+.video-card h3{font:1.6rem/1 'Bangers',var(--display);color:#24170f;letter-spacing:.015em}
+.video-card small{font:1rem 'Patrick Hand',cursive;color:#7e371e}
+.collab{background:linear-gradient(135deg,#f2e2b8,#d8bd85);color:#21180f;border-top:5px solid #28190f;border-bottom:5px solid #28190f}
+.collab-intro .eyebrow{color:#6d401c;text-shadow:none}
+.collab-intro>p:not(.eyebrow){color:#4b3925;font:1.2rem/1.45 'Patrick Hand',cursive}
+.collab-detail{border-top:3px solid #57321a}
+.collab-item{border-bottom:2px solid rgba(69,43,20,.28)}
+.collab-number{font:2rem var(--display);color:#b62a1d}
+.collab-item h3{font:1.9rem var(--display);color:#26180e}
+.collab-item p{font:1.1rem/1.4 'Patrick Hand',cursive;color:#4a3722}
+.editorial-rule{background:#263e3e;border:3px solid #24160d;border-left:9px solid #be2e20;box-shadow:5px 6px 0 rgba(42,25,12,.2)}
+.editorial-rule span{font:1.45rem var(--display);color:#ffe4aa}
+.editorial-rule p{font:1.08rem/1.4 'Patrick Hand',cursive;color:#fff0ce}
+.invite-band{background:#b92a1e;border-top:4px solid #29170d;border-bottom:4px solid #29170d}
+.invite-band>div>span{font:1rem 'Rye',serif}
+.invite-band h2{font:3.6rem var(--display)}
+.button-light{background:#f4dfad;color:#24180e;border:3px solid #2d1a0e}
+.contact{background:#f4e5c4}
+.contact-grid>div:first-child>p{color:#4c3925;font:1.2rem/1.45 'Patrick Hand',cursive}
+.contact-card{background:#ead09a;border:3px solid #321e10;border-top:10px solid #895127;box-shadow:7px 8px 0 rgba(43,26,11,.2)}
+.contact-label{font:.9rem 'Rye',serif;color:#74451e}
+.contact-link{border-color:rgba(66,39,17,.3)}
+.contact-link span{font:.82rem 'Rye',serif;color:#8d4c20}
+.contact-link strong{font:1.5rem 'Patrick Hand',cursive;color:#25170e}
+.contact-link:hover strong{color:#bd2b1e}
+.contact-card>small{font:1rem 'Patrick Hand',cursive;color:#76542f;border-color:rgba(66,39,17,.3)}
+.site-footer{background:#4d2918;border-top:5px solid #21140d}
+.footer-brand{color:#fff0cf;font-family:'Rye',serif}
+.footer-logo{font:3rem var(--display);color:#ffd37c;text-shadow:2px 3px 0 #21140d}
+.site-footer>p{font:1.1rem 'Patrick Hand',cursive;color:#f4ddb0}
+.footer-links a{font:.95rem 'Patrick Hand',cursive;color:#f4ddb0}
+.copyright{color:#c59d68}
+@media(max-width:900px){.main-nav{gap:5px}.main-nav a{padding:8px 10px;font-size:.85rem}.road-signs{padding-left:6%;padding-right:6%;gap:4%}.road-sign-post{left:calc(6% + 40px)}.road-sign strong{font-size:1.5rem}}
+@media(max-width:680px){
+ .topline{height:25px}.site-header{height:72px}
+ .main-nav{top:70px;background:#4d2918;padding:20px 6%;border-bottom:4px solid #21140d}
+ .main-nav a{clip-path:none;width:100%;font-size:1rem;padding:11px 15px}
+ .hero{min-height:690px}.hero-photo{background-position:65% center}
+ .hero-overlay{background:linear-gradient(90deg,rgba(8,27,34,.82),rgba(8,43,50,.55)),linear-gradient(0deg,rgba(16,15,12,.73),transparent 62%)}
+ .hero-content{padding:70px 6% 85px}.hero h1{font-size:clamp(4.1rem,16vw,6.1rem)}.hero-copy{font-size:1.13rem}
+ .road-signs{grid-template-columns:1fr;padding:34px 6%;gap:28px}.road-sign-stack{max-width:100%;padding-left:5px}
+ .road-sign-post{left:calc(6% + 42px);top:22px;bottom:auto;height:calc(100% - 360px)}
+ .road-sign{min-height:61px;margin:8px 0;padding:7px 43px 7px 18px}
+ .road-sign strong{font-size:1.5rem}.road-sign small{font-size:.9rem}
+ .road-sign-caption{max-width:none;padding:22px 23px;margin-left:2px}.road-sign-caption strong{font-size:2.2rem}
+ .section{padding:74px 6%}.about h2,.community h2,.content h2,.collab h2,.contact h2{font-size:clamp(2.8rem,12vw,4.4rem)}
+ .about-copy p,.collab-intro>p:not(.eyebrow),.contact-grid>div:first-child>p{font-size:1.1rem}
+ .topic-card h3{font-size:2.05rem}.video-card h3{font-size:1.35rem}.invite-band h2{font-size:2.8rem}
+}
   </style>
   <script src="script.js" defer></script>
 </head>
