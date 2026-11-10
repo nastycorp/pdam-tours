@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Media Kit 2026 de PDAM - Pa' Donde Apunte la Moto. Canal independiente de motociclismo, cultura motera, análisis, viajes e historias reales.">
+<title>PDAM | Media Kit 2026</title>
+<style>
+:root{
+ --ink:#171d20;--ink2:#24343b;--blue:#087da4;--blue2:#07516d;--cream:#fff0ce;--paper:#f1dfb6;
+ --paper2:#e6d0a0;--red:#c72e25;--red2:#9e211e;--wood:#4a2b18;--wood2:#24170f;--gold:#f1bd55;
+ --display:'DejaVu Sans Condensed','Arial Narrow',sans-serif;--body:'Lato','DejaVu Sans',Arial,sans-serif;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#111c22;color:var(--ink);font-family:var(--body)}
+a{color:inherit}
+.web-nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:22px;padding:10px max(24px,calc((100vw - 1160px)/2));background:repeating-linear-gradient(0deg,#382113 0px,#59351e 4px,#432716 8px,#2a190f 11px);border-bottom:5px solid #1e120b;box-shadow:0 4px 12px #0008;color:#fff0ce}
+.web-nav:before{content:'';position:absolute;inset:3px 12px auto;height:2px;background:#c18a47;opacity:.7}.web-brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:900 16px var(--display);letter-spacing:.06em}.web-brand img{width:48px;height:48px;border-radius:50%;border:2px solid #21150e;background:#fff0ce;object-fit:cover}.web-links{margin-left:auto;display:flex;align-items:center;gap:18px;font:800 12px var(--display);text-transform:uppercase;letter-spacing:.06em}.web-links a{text-decoration:none;color:#f8e9c9}.web-links a:hover{color:var(--gold)}.download-top{padding:10px 14px;background:var(--red);border:2px solid #20130b;color:#fff;text-decoration:none;font:900 12px var(--display);letter-spacing:.05em;box-shadow:3px 3px 0 #1a100b}
+.book{width:min(100%,210mm);margin:28px auto 56px}.sheet{position:relative;width:210mm;height:297mm;overflow:hidden;margin:0 auto 28px;background:var(--paper);box-shadow:0 15px 45px #0006;isolation:isolate;break-after:page;page-break-after:always}.sheet:last-child{break-after:auto;page-break-after:auto}
+/* shared page furniture */
+.page-topline{position:absolute;z-index:5;top:0;left:0;right:0;height:14mm;background:repeating-linear-gradient(0deg,#352014 0 3px,#55331d 4px,#422716 7px,#29180e 10px);border-bottom:2px solid #130c07;color:#fff1cf;display:flex;align-items:center;justify-content:space-between;padding:0 13mm;font:900 8pt var(--display);letter-spacing:.15em;text-transform:uppercase}.page-topline:after{content:'';position:absolute;left:13mm;right:13mm;top:3mm;height:1px;background:#c18b48;opacity:.7}
+.page-foot{position:absolute;left:13mm;right:13mm;bottom:8mm;display:flex;justify-content:space-between;align-items:center;color:#f5e6c5;font:700 7.5pt var(--display);letter-spacing:.1em;text-transform:uppercase}.page-foot .num{background:var(--red);padding:4px 9px;color:white}
+.kicker{font:900 8pt var(--display);letter-spacing:.17em;text-transform:uppercase;color:var(--red2)}
+.page-two .kicker,.page-four .kicker{color:var(--gold)}
+.display{font-family:var(--display);font-weight:1000;letter-spacing:-.035em;text-transform:uppercase;line-height:.91}
+.rough-label{display:inline-block;padding:7px 14px 6px;background:var(--red);color:#fff0ce;transform:skew(-5deg);font:900 10pt var(--display);letter-spacing:.08em;text-transform:uppercase;box-shadow:3px 4px 0 #1c120d}
+.wood-stamp{display:inline-block;padding:7px 13px;background:repeating-linear-gradient(0deg,#392215 0 3px,#56341e 4px,#3c2516 7px);color:#ffedc7;border:2px solid #1f130c;font:900 8pt var(--display);letter-spacing:.15em;text-transform:uppercase;box-shadow:3px 4px 0 #28180f}
+.paper-panel{background:linear-gradient(135deg,#fff3d5,#e9d4a6);border:2px solid #49301b;box-shadow:6px 7px 0 #2a1a10a8;position:relative}
+.paper-panel:after{content:'';position:absolute;inset:5px;border:1px dashed #9f8055;pointer-events:none;opacity:.65}
+
+/* 01 / cover */
+.cover{background:#102d3a;color:var(--ink)}
+.cover-photo{position:absolute;inset:0 0 auto;height:164mm;width:100%;object-fit:cover;object-position:center 41%;}
+.cover-skywash{position:absolute;inset:0 0 auto;height:164mm;background:linear-gradient(90deg,transparent 0%,transparent 39%,rgba(9,24,31,.08) 49%,rgba(9,24,31,.78) 100%),linear-gradient(0deg,rgba(13,28,35,.85) 0%,transparent 26%);}
+.cover-logo{position:absolute;left:13mm;top:19mm;width:36mm;height:36mm;object-fit:cover;border-radius:50%;border:3px solid #1a130d;box-shadow:0 4px 0 #0007;z-index:3}
+.cover-head{position:absolute;z-index:3;top:33mm;right:13mm;width:83mm;text-align:left;color:#111;}
+.cover-head .paper-title{padding:10mm 9mm 8mm;background:#fff0ce;border:3px solid #21150e;box-shadow:7px 8px 0 #15100bc7;clip-path:polygon(2% 1%,98% 0,100% 96%,95% 100%,1% 98%,0 6%);}
+.cover-head .pdam{font:1000 55pt/.86 var(--display);letter-spacing:-.04em;color:#141414;text-shadow:2px 3px 0 #c7b087}
+.cover-head .subbrand{display:block;margin-top:5px;background:var(--red);color:#fff1d0;padding:7px 9px;font:1000 17pt/.95 var(--display);letter-spacing:-.02em;transform:rotate(-1deg);box-shadow:3px 4px 0 #1b110a}
+.cover-head .tagline{margin:15px 0 0;font:900 17pt/1.04 var(--display);text-transform:uppercase;color:#17252c}
+.cover-head .cover-copy{margin:10px 0 0;font:700 10pt/1.35 var(--body);color:#27343a}
+.cover-stamp{position:absolute;z-index:4;left:13mm;top:134mm;padding:7px 12px;background:#21170f;color:#f8e4b8;border:2px solid #e2b86a;font:900 9pt var(--display);letter-spacing:.14em;text-transform:uppercase;transform:rotate(-2deg)}
+.cover-bottom{position:absolute;left:0;right:0;bottom:0;height:133mm;background:repeating-linear-gradient(90deg,#e9d4a6 0,#f7e6c0 22mm,#e9d4a6 42mm);padding:13mm 13mm 17mm;border-top:7px solid #21160e;}
+.cover-bottom:before{content:'';position:absolute;left:0;right:0;top:-9mm;height:12mm;background:#f4e2ba;clip-path:polygon(0 25%,5% 55%,12% 24%,19% 58%,28% 18%,38% 58%,49% 25%,59% 57%,70% 21%,81% 54%,91% 20%,100% 48%,100% 100%,0 100%);border-top:2px solid #3c2817}
+.cover-bottom .eyebrow{margin:0 0 9px;color:#8a421f;font:900 8pt var(--display);letter-spacing:.17em;text-transform:uppercase}
+.cover-bottom h1{margin:0;max-width:180mm;font:1000 29pt/.92 var(--display);letter-spacing:-.03em;text-transform:uppercase;color:#1a1a17}
+.cover-bottom h1 em{color:var(--red);font-style:normal}
+.cover-bottom .statement{max-width:170mm;margin:9px 0 15px;color:#34271a;font:700 11pt/1.38 var(--body)}
+.cover-bottom .three-points{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+.cover-bottom .point{padding:9px 10px;border-left:4px solid var(--red);background:#fff2d4b5;min-height:22mm}
+.cover-bottom .point b{display:block;font:900 11pt var(--display);text-transform:uppercase;color:#22170e}
+.cover-bottom .point span{display:block;margin-top:4px;color:#5a462e;font:700 8.5pt/1.25 var(--body)}
+.cover-bottom .metadata{position:absolute;bottom:12mm;left:13mm;right:13mm;display:flex;align-items:center;justify-content:space-between;color:#48351f;font:900 8pt var(--display);letter-spacing:.11em;text-transform:uppercase}
+.cover-bottom .metadata .red-mark{padding:5px 9px;background:var(--red);color:#fff2d2}
+
+/* 02 / editorial content */
+.page-two{background:radial-gradient(ellipse at 85% 5%,#12688a 0,#0b415a 38%,#172932 100%);color:var(--cream);padding:23mm 13mm 20mm;}
+.page-two .page-topline{margin:-23mm -13mm 0;width:calc(100% + 26mm)}
+.p2-title{margin:9mm 0 7mm;max-width:175mm;font:1000 33pt/.88 var(--display);letter-spacing:-.03em;text-transform:uppercase;color:#fff0ce;text-shadow:3px 4px 0 #06171d}
+.p2-title em{color:var(--gold);font-style:normal}
+.p2-intro{max-width:178mm;margin:0 0 9mm;color:#e1dfcf;font:700 10.5pt/1.42 var(--body)}
+.topic-grid{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+.topic{position:relative;min-height:37mm;padding:7mm 7mm 6mm 18mm;background:linear-gradient(135deg,#fff1d1,#e7d1a2);color:#1c1b17;border:2px solid #2c1b10;box-shadow:4px 5px 0 #08161c;}
+.topic .n{position:absolute;left:6mm;top:6mm;width:8mm;height:8mm;display:grid;place-items:center;background:var(--red);color:#fff;font:900 9pt var(--display);border:1px solid #20140c}
+.topic h3{margin:0 0 5px;font:1000 14pt/.95 var(--display);text-transform:uppercase;color:#171a19}
+.topic p{margin:0;color:#55422b;font:700 8.3pt/1.28 var(--body)}
+.p2-note{margin:9mm 0 5mm;padding:7mm 8mm;background:#13252c;border-left:5px solid var(--gold);color:#f8e9ca}
+.p2-note h3{margin:0 0 5px;color:var(--gold);font:900 13pt var(--display);text-transform:uppercase}
+.p2-note p{margin:0;font:700 9.5pt/1.34 var(--body)}
+.sample-label{margin:8mm 0 3mm;color:#f1bd55;font:900 8pt var(--display);letter-spacing:.16em;text-transform:uppercase}
+.sample-list{display:grid;grid-template-columns:1fr 1fr;gap:3px 7mm;margin:0;padding:0;list-style:none}
+.sample-list li{padding:5px 0 5px 10px;border-left:3px solid #d6483a;color:#f7ebd0;font:800 8.7pt/1.2 var(--body)}
+.sample-list li:before{content:'“';font:900 13pt var(--display);color:var(--gold);margin-left:-1px;margin-right:5px}
+
+/* 03 / community */
+.page-three{background:linear-gradient(135deg,#f4e5c4,#e3ce9d);padding:23mm 13mm 20mm;color:var(--ink)}
+.page-three .page-topline{margin:-23mm -13mm 0;width:calc(100% + 26mm)}
+.p3-title{margin:9mm 0 6mm;max-width:180mm;font:1000 32pt/.9 var(--display);letter-spacing:-.03em;text-transform:uppercase;color:#1b1c19}
+.p3-title em{color:var(--red);font-style:normal}
+.p3-intro{max-width:178mm;margin:0 0 8mm;color:#4c3a26;font:700 10pt/1.4 var(--body)}
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm;margin:6mm 0}
+.stat{padding:6mm 5mm 5mm;background:#16272e;color:#fff0ce;border:2px solid #26180f;box-shadow:4px 5px 0 #6a4a24}
+.stat .v{display:block;font:1000 27pt/.9 var(--display);letter-spacing:-.03em;color:#fff3d4}
+.stat .l{display:block;margin-top:5px;font:900 8pt var(--display);letter-spacing:.07em;text-transform:uppercase;color:#f2c46d}
+.stat .s{display:block;margin-top:4px;color:#d5d3c4;font:700 7pt/1.2 var(--body)}
+.platform-row{display:flex;gap:3mm;flex-wrap:wrap;margin:7mm 0 8mm}
+.platform{padding:6px 12px;background:#fff0cf;border:2px solid #3b2716;color:#241b13;font:900 8pt var(--display);letter-spacing:.08em;text-transform:uppercase;box-shadow:2px 3px 0 #6c502e}
+.platform.yt{background:#c92b24;color:#fff1d0}.platform.fb{background:#1d5d96;color:#fff}.platform.ig{background:#efc7a7;color:#451e1b}.platform.tt{background:#1a2024;color:#fff}
+.metrics-note{margin:0 0 7mm;color:#654d2e;font:700 7.3pt/1.3 var(--body);font-style:italic}
+.photo-strip{display:grid;grid-template-columns:1.08fr 1fr 1fr;gap:4mm;height:53mm;margin:4mm 0 8mm}
+.photo-strip figure{position:relative;margin:0;overflow:hidden;border:3px solid #24170e;box-shadow:4px 5px 0 #967347}
+.photo-strip img{width:100%;height:100%;object-fit:cover;display:block}
+.photo-strip figcaption{position:absolute;left:0;right:0;bottom:0;padding:5px 7px;background:#151c20dd;color:#fff0ce;font:900 7pt var(--display);letter-spacing:.08em;text-transform:uppercase}
+.audience-panel{display:grid;grid-template-columns:1.1fr .9fr;gap:7mm;padding:7mm;background:#fff0cf;border:2px solid #4a3019;box-shadow:5px 6px 0 #7c5b30}
+.audience-panel h3{margin:0 0 5px;color:#8b3c20;font:1000 13pt var(--display);text-transform:uppercase}
+.audience-panel p{margin:0;color:#443522;font:700 8.7pt/1.32 var(--body)}
+.audience-panel .callout{padding-left:5mm;border-left:4px solid var(--red)}
+.audience-panel .callout strong{display:block;font:1000 11pt var(--display);text-transform:uppercase;color:#1c1c18;margin-bottom:4px}
+
+/* 04 / collaborations */
+.page-four{background:radial-gradient(ellipse at 0% 100%,#163e4a 0,#172b33 52%,#111c21 100%);color:#fff0ce;padding:23mm 13mm 20mm}
+.page-four .page-topline{margin:-23mm -13mm 0;width:calc(100% + 26mm)}
+.p4-title{margin:9mm 0 6mm;max-width:175mm;font:1000 31pt/.9 var(--display);letter-spacing:-.03em;text-transform:uppercase;color:#fff0ce;text-shadow:3px 4px 0 #050c10}
+.p4-title em{color:var(--gold);font-style:normal}
+.p4-intro{max-width:176mm;margin:0 0 8mm;color:#e3dac4;font:700 10pt/1.4 var(--body)}
+.collab-grid{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.collab{padding:6mm 6mm 5mm;background:linear-gradient(135deg,#fff0ce,#e5cfa0);border:2px solid #1d120b;color:#1d1a14;box-shadow:4px 5px 0 #070f13;min-height:36mm}
+.collab .id{display:inline-block;margin-bottom:5px;padding:3px 6px;background:var(--red);color:#fff;font:900 7.5pt var(--display)}
+.collab h3{margin:0 0 5px;font:1000 13.3pt/.94 var(--display);text-transform:uppercase}
+.collab p{margin:0;color:#58442a;font:700 8pt/1.28 var(--body)}
+.editorial{margin:8mm 0 0;padding:7mm 8mm;background:#f7e5bd;color:#1b1b18;border-left:7px solid var(--red);border-top:2px solid #362216;border-right:2px solid #362216;border-bottom:2px solid #362216;box-shadow:5px 6px 0 #080f12}
+.editorial .tag{font:900 7.5pt var(--display);letter-spacing:.15em;text-transform:uppercase;color:#94321f}
+.editorial h3{margin:5px 0 6px;font:1000 18pt/.94 var(--display);text-transform:uppercase}
+.editorial p{margin:0;color:#473720;font:700 8.6pt/1.32 var(--body)}
+.contact-panel{display:grid;grid-template-columns:1.3fr .7fr;gap:8mm;align-items:center;margin-top:8mm;padding:7mm;background:#13262e;border:2px solid #0c1113;box-shadow:5px 6px 0 #070e12}
+.contact-panel .eyebrow{margin:0 0 5px;color:#f3c66e;font:900 8pt var(--display);letter-spacing:.15em;text-transform:uppercase}
+.contact-panel h3{margin:0 0 8px;color:#fff0cf;font:1000 18pt/.95 var(--display);text-transform:uppercase}
+.contact-panel p{margin:3px 0;color:#e4d8bc;font:700 8.5pt/1.25 var(--body)}
+.contact-panel a{color:#ffce6b;text-decoration:none}
+.contact-qr{justify-self:end;width:30mm;height:30mm;padding:2mm;background:#fff0cf;border:2px solid #16100b}
+.contact-qr img{width:100%;height:100%;display:block}
+.contact-caption{margin-top:3mm;text-align:center;color:#e9d7ae;font:900 7pt var(--display);letter-spacing:.08em;text-transform:uppercase}
+.bottom-note{margin:7mm 0 0;color:#d4c9af;font:700 7.4pt/1.3 var(--body);text-align:center}
+
+@media(max-width:820px){.web-nav{flex-wrap:wrap;gap:10px;padding:8px 14px}.web-links{order:3;width:100%;overflow-x:auto;gap:15px;margin-left:0;padding:5px 0}.download-top{margin-left:auto}.book{margin:12px auto}.sheet{width:100%;height:auto;min-height:297mm;transform-origin:top left}.page-two,.page-three,.page-four{padding-left:7mm;padding-right:7mm}.page-topline{padding:0 7mm}.page-two .page-topline,.page-three .page-topline,.page-four .page-topline{margin-left:-7mm;margin-right:-7mm;width:calc(100% + 14mm)}.cover-head{right:6mm;width:82mm}.cover-head .pdam{font-size:45pt}.cover-bottom{padding-left:7mm;padding-right:7mm}.cover-bottom .metadata{left:7mm;right:7mm}}
+@media(max-width:560px){.web-brand{font-size:13px}.web-brand img{width:40px;height:40px}.web-links{font-size:10px}.download-top{font-size:10px;padding:8px}.sheet{min-height:250mm}.cover-photo,.cover-skywash{height:140mm}.cover-bottom{height:110mm;padding-top:10mm}.cover-head{top:40mm;width:76mm}.cover-head .pdam{font-size:36pt}.cover-head .tagline{font-size:12pt}.cover-head .cover-copy{font-size:8pt}.cover-logo{width:27mm;height:27mm}.cover-bottom h1{font-size:21pt}.cover-bottom .statement{font-size:9pt}.topic-grid,.collab-grid{grid-template-columns:1fr}.topic{min-height:30mm}.photo-strip{height:38mm}.stat-grid{grid-template-columns:1fr 1fr}.audience-panel,.contact-panel{grid-template-columns:1fr}.contact-qr{justify-self:start}.cover-bottom .three-points{gap:4px}.cover-bottom .point{padding:6px}.cover-bottom .point b{font-size:8pt}.cover-bottom .point span{font-size:7pt}}
+/* WeasyPrint-safe flex layouts for the downloadable PDF */
+.cover-bottom .three-points{display:flex;gap:8px}
+.cover-bottom .point{flex:1}
+.topic-grid{display:flex;flex-wrap:wrap;gap:5mm}
+.topic{width:calc(50% - 2.5mm);flex:0 0 calc(50% - 2.5mm)}
+.sample-list{display:flex;flex-wrap:wrap;gap:3px 7mm}
+.sample-list li{width:calc(50% - 3.5mm);flex:0 0 calc(50% - 3.5mm)}
+.stat-grid{display:flex;flex-wrap:wrap;gap:4mm;margin:4mm 0}
+.stat{width:calc(33.333% - 2.7mm);flex:0 0 calc(33.333% - 2.7mm);padding:4.5mm 4mm 3.5mm}
+.stat[style*="grid-column"]{width:100%;flex:0 0 100%}
+.stat .v{font-size:23pt}
+.photo-strip{display:flex;gap:4mm;height:42mm;margin:2mm 0 5mm}
+.photo-strip figure{flex:1;min-width:0}
+.photo-strip figure:first-child{flex:1.08}
+.audience-panel{display:flex;gap:6mm;padding:5mm}
+.audience-panel>div:first-child{flex:1.1}
+.audience-panel .callout{flex:.9}
+.collab-grid{display:flex;flex-wrap:wrap;gap:4mm}
+.collab{width:calc(50% - 2mm);flex:0 0 calc(50% - 2mm)}
+.contact-panel{display:flex;gap:8mm}
+.contact-panel>div:first-child{flex:1.3}
+.contact-panel>div:last-child{flex:.7;text-align:center}
+.page-three .p3-intro{margin-bottom:5mm}
+.page-three .platform-row{margin:4mm 0 5mm}
+.page-three .metrics-note{margin:0 0 4mm}
+.page-three .audience-panel h3{font-size:11.5pt}
+.page-three .audience-panel p{font-size:8pt}
+/* Final fixed-width flex sizing for reliable A4 pagination */
+.topic-grid{gap:3mm}
+.topic{width:88mm;flex:0 0 88mm;min-height:31mm;padding:5mm 5mm 4mm 15mm}
+.topic .n{left:4mm;top:5mm;width:7mm;height:7mm}
+.topic h3{font-size:12pt;margin-bottom:4px}
+.topic p{font-size:7.6pt;line-height:1.22}
+.p2-title{font-size:29pt;margin:7mm 0 5mm}
+.p2-intro{font-size:9.3pt;line-height:1.3;margin-bottom:6mm}
+.p2-note{margin:5mm 0 4mm;padding:5mm 6mm}
+.p2-note h3{font-size:11pt}
+.p2-note p{font-size:8.5pt;line-height:1.25}
+.sample-label{margin:4mm 0 2mm}
+.sample-list{gap:2px 5mm}
+.sample-list li{width:87mm;flex:0 0 87mm;font-size:7.7pt}
+.collab-grid{gap:3mm}
+.collab{width:88mm;flex:0 0 88mm;min-height:31mm;padding:4.5mm 5mm 4mm}
+.collab h3{font-size:11.7pt}
+.collab p{font-size:7.5pt;line-height:1.2}
+.p4-title{font-size:28pt;margin:7mm 0 5mm}
+.p4-intro{font-size:9pt;line-height:1.3;margin-bottom:5mm}
+.editorial{margin:5mm 0 0;padding:5mm 6mm}
+.editorial h3{font-size:15pt}
+.editorial p{font-size:7.8pt;line-height:1.22}
+.contact-panel{margin-top:5mm;padding:5mm;gap:5mm}
+.contact-panel h3{font-size:15pt}
+.contact-panel p{font-size:7.5pt}
+.contact-qr{width:25mm;height:25mm}
+.contact-caption{font-size:6.4pt}
+.bottom-note{margin:4mm 0 0;font-size:6.5pt}
+/* Inline-block card layout for stable two-column print composition */
+.topic-grid{display:block;font-size:0;}
+.topic{display:inline-block;vertical-align:top;box-sizing:border-box;width:87mm;margin:0 5mm 3mm 0;min-height:30mm;padding:5mm 5mm 4mm 15mm;font-size:initial;}
+.topic:nth-child(even){margin-right:0}
+.topic .n{left:4mm;top:5mm;width:7mm;height:7mm}
+.topic h3{font-size:12pt;margin-bottom:4px}
+.topic p{font-size:7.6pt;line-height:1.22}
+.sample-list{display:block;margin-top:1mm}
+.sample-list li{display:inline-block;vertical-align:top;box-sizing:border-box;width:87mm;margin:0 5mm 2mm 0;font-size:7.6pt}
+.sample-list li:nth-child(even){margin-right:0}
+.collab-grid{display:block;font-size:0}
+.collab{display:inline-block;vertical-align:top;box-sizing:border-box;width:87mm;margin:0 5mm 3mm 0;min-height:30mm;padding:4.5mm 5mm 4mm;font-size:initial}
+.collab:nth-child(even){margin-right:0}
+.collab h3{font-size:11.7pt}
+.collab p{font-size:7.5pt;line-height:1.2}
+.p2-title{font-size:29pt;margin:7mm 0 5mm}
+.p2-intro{font-size:9.3pt;line-height:1.3;margin-bottom:6mm}
+.p2-note{margin:5mm 0 4mm;padding:5mm 6mm}
+.p2-note h3{font-size:11pt}
+.p2-note p{font-size:8.5pt;line-height:1.25}
+.sample-label{margin:4mm 0 2mm}
+.p4-title{font-size:28pt;margin:7mm 0 5mm}
+.p4-intro{font-size:9pt;line-height:1.3;margin-bottom:5mm}
+.editorial{margin:5mm 0 0;padding:5mm 6mm}
+.editorial h3{font-size:15pt}
+.editorial p{font-size:7.8pt;line-height:1.22}
+.contact-panel{margin-top:5mm;padding:5mm;gap:5mm}
+.contact-panel h3{font-size:15pt}
+.contact-panel p{font-size:7.5pt}
+.contact-qr{width:25mm;height:25mm}
+.contact-caption{font-size:6.4pt}
+.bottom-note{margin:4mm 0 0;font-size:6.5pt}
+@page{size:A4 portrait;margin:0}
+@media print{
+ html,body{margin:0!important;padding:0!important;background:white!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+ .web-nav{display:none!important}.book{width:210mm;margin:0!important}.sheet{width:210mm;height:297mm;margin:0!important;box-shadow:none!important;break-after:page;page-break-after:always;overflow:hidden}
+ .sheet:last-child{break-after:auto;page-break-after:auto}
+ .cover-photo,.cover-skywash{height:164mm}.cover-bottom{height:133mm}.page-two,.page-three,.page-four{padding:23mm 13mm 20mm}
+ .page-two .page-topline,.page-three .page-topline,.page-four .page-topline{margin:-23mm -13mm 0;width:calc(100% + 26mm)}
+ a{text-decoration:none}
+}
+</style>
+</head>
+<body>
+<nav class="web-nav" aria-label="Navegación del dossier">
+ <a class="web-brand" href="index.html"><img src="assets/pdam-dossier-emblem.webp" alt="Logo PDAM"><span>PDAM / PA' DONDE APUNTE LA MOTO</span></a>
+ <div class="web-links"><a href="index.html">Inicio</a><a href="#que-es">El canal</a><a href="#comunidad">Comunidad</a><a href="#colaboraciones">Colaboraciones</a><a href="#contacto">Contacto</a></div>
+ <a class="download-top" href="assets/PDAM-Media-Kit-2026.pdf" download>DESCARGAR PDF ↓</a>
+</nav>
+<main class="book">
+<!-- PAGE 1 -->
+<section class="sheet cover" aria-label="Presentación PDAM">
+ <img class="cover-photo" src="assets/pdam-hero-main.webp" alt="Ilustración de PDAM: un motociclista sentado con una taza junto a su moto, con carretera y montañas al fondo">
+ <div class="cover-skywash"></div>
+ <img class="cover-logo" src="assets/pdam-dossier-emblem.webp" alt="Emblema de Pa' Donde Apunte la Moto">
+ <div class="cover-head">
+  <div class="paper-title">
+   <div class="pdam">PDAM</div>
+   <span class="subbrand">PA' DONDE APUNTE LA MOTO</span>
+   <p class="tagline">Motos, historias reales y opinión sin libreto.</p>
+   <p class="cover-copy">El canal para quienes aman las motos, pero también las cuestionan. Comparamos, probamos y hablamos de precios, garantías, equipos, viajes e historias reales.</p>
+  </div>
+ </div>
+ <div class="cover-stamp">MEDIA KIT COMERCIAL · 2026</div>
+ <div class="cover-bottom">
+  <p class="eyebrow">MOTOCICLISMO · COLOMBIA · CULTURA MOTERA</p>
+  <h1>No venimos solo a mostrar la moto.<br><em>Venimos a contar lo que hay detrás.</em></h1>
+  <p class="statement">PDAM observa el mundo de las dos ruedas desde el lugar del motociclista: el que compra, compara, pregunta, se equipa, sale a rodar y tiene algo que decir cuando vuelve.</p>
+  <div class="three-points">
+   <div class="point"><b>Mirada propia</b><span>Opinión y criterio, sin libreto prestado.</span></div>
+   <div class="point"><b>Humor colombiano</b><span>La conversación motera, sin solemnidades.</span></div>
+   <div class="point"><b>Colombia en moto</b><span>Máquinas, caminos, personas y experiencias.</span></div>
+  </div>
+  <div class="metadata"><span>PA' DONDE APUNTE LA MOTO</span><span class="red-mark">COLOMBIA / 2026</span></div>
+ </div>
+</section>
+<!-- PAGE 2 -->
+<section class="sheet page-two" id="que-es" aria-label="Qué es PDAM y sus temas">
+ <div class="page-topline"><span>PDAM / PA' DONDE APUNTE LA MOTO</span><span>02 · QUÉ ES EL CANAL</span></div>
+ <p class="kicker">EL MOTOR ES EL MISMO. LOS TEMAS, NO.</p>
+ <h2 class="p2-title">Una moto da para mucho más que <em>hablar de cilindrada.</em></h2>
+ <p class="p2-intro">PDAM es un canal independiente sobre el mundo de las motos. Aquí caben los viajes, sí, pero también las preguntas que aparecen antes y después de comprar una: qué ofrece, cuánto cuesta, qué falla, para qué sirve un accesorio y qué cuentan de verdad quienes la usan. La carretera es parte de la historia; no es la única historia.</p>
+ <div class="topic-grid">
+  <article class="topic"><span class="n">01</span><h3>Motos y comparativos</h3><p>Modelos, segmentos, fichas técnicas y experiencia de uso. Comparar antes de enamorarse.</p></article>
+  <article class="topic"><span class="n">02</span><h3>Precios y mercado</h3><p>Precios en Colombia, diferencias entre mercados y decisiones de compra. La cuenta también importa.</p></article>
+  <article class="topic"><span class="n">03</span><h3>Garantías y fallas</h3><p>Lo que cubre la garantía, lo que no, mantenimientos y problemas que vale la pena conocer.</p></article>
+  <article class="topic"><span class="n">04</span><h3>Pruebas y tecnología</h3><p>Equipamiento, accesorios, cámaras, navegación y productos puestos a trabajar en el mundo real.</p></article>
+  <article class="topic"><span class="n">05</span><h3>Viajes y experiencias</h3><p>Rutas, destinos, alojamientos, restaurantes y experiencias vistas desde el asiento de la moto.</p></article>
+  <article class="topic"><span class="n">06</span><h3>Historias y cultura motera</h3><p>Personajes, costumbres, conversaciones y situaciones de la vida en dos ruedas.</p></article>
+ </div>
+ <div class="p2-note"><h3>¿Cómo suena PDAM?</h3><p>Con humor, datos y preguntas directas. Hablamos como motociclistas, no como un catálogo. Si una moto cuesta una fortuna, una garantía deja dudas o un accesorio promete milagros, lo ponemos sobre la mesa. Y si el camino nos lleva a un buen plato de carretera, también se cuenta.</p></div>
+ <p class="sample-label">CONVERSACIONES QUE YA HACEN PARTE DEL CANAL</p>
+ <ul class="sample-list">
+  <li>Lo que nunca le dicen sobre la garantía de su moto</li>
+  <li>El engaño de los precios de motos en Colombia</li>
+  <li>¿Realmente necesita una pantalla en la moto?</li>
+  <li>El engaño de las motos de aventura</li>
+ </ul>
+ <div class="page-foot"><span>CONTENIDO PROPIO · CRITERIO PROPIO</span><span class="num">02</span></div>
+</section>
+<!-- PAGE 3 -->
+<section class="sheet page-three" id="comunidad" aria-label="Comunidad y alcance de PDAM">
+ <div class="page-topline"><span>PDAM / PA' DONDE APUNTE LA MOTO</span><span>03 · LA COMUNIDAD</span></div>
+ <p class="kicker">UNA COMUNIDAD QUE PREGUNTA, COMPARA Y RUEDA</p>
+ <h2 class="p3-title">No es solo gente mirando.<br><em>Es gente metida en la conversación.</em></h2>
+ <p class="p3-intro">PDAM conecta con motociclistas interesados en entender mejor sus motos, tomar decisiones de compra, conocer equipos, descubrir lugares y compartir experiencias. La comunidad se mueve entre formatos y plataformas; cada red tiene su propio público y su propia conversación.</p>
+ <div class="stat-grid">
+  <div class="stat"><span class="v">5.110</span><span class="l">Suscriptores · YouTube</span><span class="s">Cifra de canal consultada el 10/11/2026.</span></div>
+  <div class="stat"><span class="v">874.314</span><span class="l">Vistas acumuladas · YouTube</span><span class="s">Reproducciones históricas del canal.</span></div>
+  <div class="stat"><span class="v">344</span><span class="l">Videos · YouTube</span><span class="s">Videos públicos registrados en el canal.</span></div>
+  <div class="stat" style="grid-column:1/-1;background:#24404a"><span class="v">9.985</span><span class="l">Me gusta de la página · Facebook</span><span class="s">Último dato disponible: 10/11/2026.</span></div>
+ </div>
+ <div class="platform-row" aria-label="Plataformas de PDAM"><span class="platform yt">YouTube</span><span class="platform fb">Facebook</span><span class="platform ig">Instagram</span><span class="platform tt">TikTok</span></div>
+ <p class="metrics-note">Datos consultados el 10 de noviembre de 2026 en las cuentas de YouTube y Facebook conectadas. Las cifras son indicadores propios de cada plataforma; no se suman como personas únicas.</p>
+ <div class="photo-strip">
+  <figure><img src="assets/pdamexperiencia.webp" alt="Motociclista recorriendo una ruta de paisaje abierto"><figcaption>RUTA / TERRITORIO</figcaption></figure>
+  <figure><img src="assets/pdam-ruta-grupo.webp" alt="Motociclistas reunidos alrededor de un mapa"><figcaption>EXPERIENCIA / GRUPO</figcaption></figure>
+  <figure><img src="assets/pdam-comunidad.webp" alt="Grupo de motociclistas con sus motos"><figcaption>PERSONAS / COMUNIDAD</figcaption></figure>
+ </div>
+ <div class="audience-panel">
+  <div><h3>¿A quién le habla PDAM?</h3><p>A motociclistas y personas interesadas en el universo de las dos ruedas: quienes están buscando su primera moto, quienes comparan antes de cambiarla, quienes viajan, se equipan, preguntan por garantías o simplemente disfrutan conversar de motos con humor y criterio.</p></div>
+  <div class="callout"><strong>Una comunidad con temas para marcas distintas</strong><p>Motocicletas, accesorios, equipamiento, tecnología, talleres, tiendas, restaurantes, alojamientos, destinos y experiencias que tengan algo real que aportar al motociclista.</p></div>
+ </div>
+ <div class="page-foot" style="color:#46341f"><span>INDICADORES DE PLATAFORMA · CORTE 10 NOV 2026</span><span class="num">03</span></div>
+</section>
+<!-- PAGE 4 -->
+<section class="sheet page-four" id="colaboraciones" aria-label="Colaboraciones comerciales">
+ <div class="page-topline"><span>PDAM / PA' DONDE APUNTE LA MOTO</span><span>04 · COLABORACIONES</span></div>
+ <p class="kicker">ALIANZAS PARA ENTRAR EN LA CONVERSACIÓN MOTERA</p>
+ <h2 class="p4-title">Su marca puede aparecer en la historia.<br><em>Sin cambiar el guion de PDAM.</em></h2>
+ <p class="p4-intro">Buscamos colaboraciones con marcas, comercios, talleres, destinos y establecimientos que tengan algo relevante para quienes viven las motos. La idea es integrar la propuesta en contenidos que PDAM produce para su propia comunidad.</p>
+ <div class="collab-grid">
+  <article class="collab"><span class="id">01 / INTEGRACIÓN</span><h3>Marca dentro de videos propios</h3><p>Una mención o segmento acordado dentro de un video de PDAM, conectado con el tema y con el interés de la audiencia.</p></article>
+  <article class="collab"><span class="id">02 / LOCACIONES</span><h3>Visitas a establecimientos</h3><p>Restaurantes, alojamientos, talleres, tiendas y destinos que podamos conocer e incorporar de manera natural al contenido.</p></article>
+  <article class="collab"><span class="id">03 / PRODUCTO</span><h3>Pruebas y experiencias reales</h3><p>Equipamiento, accesorios y tecnología puestos en contexto: qué hacen, cómo funcionan y qué vale la pena saber.</p></article>
+  <article class="collab"><span class="id">04 / COMUNIDAD</span><h3>Eventos y experiencias</h3><p>Encuentros, rodadas, lanzamientos y actividades que conecten con la cultura motociclista y la audiencia de PDAM.</p></article>
+ </div>
+ <div class="editorial">
+  <span class="tag">UNA REGLA QUE NO SE NEGOCIA</span>
+  <h3>La colaboración no compra nuestra opinión.</h3>
+  <p>PDAM no funciona como una productora que entrega videos institucionales o piezas por encargo para las redes de terceros. El contenido se crea, se narra y se publica para la comunidad de PDAM. Las integraciones comerciales se acuerdan con claridad y se identifican con transparencia; una marca puede participar en la historia, pero no imponer una opinión positiva ni decidir la conclusión.</p>
+ </div>
+ <div class="contact-panel" id="contacto">
+  <div>
+   <p class="eyebrow">HABLEMOS DE UNA COLABORACIÓN</p>
+   <h3>¿Tiene algo que valga la pena contarle a un motociclista?</h3>
+   <p><b>WhatsApp:</b> <a href="https://wa.me/573245929902">+57 324 592 9902</a></p>
+   <p><b>Correo:</b> <a href="mailto:padondeapuntelamoto@gmail.com">padondeapuntelamoto@gmail.com</a></p>
+   <p><b>YouTube:</b> <a href="https://www.youtube.com/@PaDondeApunteLaMoto">Pa' Donde Apunte la Moto</a></p>
+  </div>
+  <div><img class="contact-qr" src="assets/contacto-whatsapp-qr.png" alt="Código QR para iniciar una conversación por WhatsApp"><div class="contact-caption">Escanee y conversemos</div></div>
+ </div>
+ <p class="bottom-note">Cada propuesta se revisa según el formato, el contexto, la ubicación y el alcance acordado antes de grabar. PDAM / Colombia / 2026.</p>
+ <div class="page-foot"><span>PA' DONDE APUNTE LA MOTO · COLOMBIA</span><span class="num">04</span></div>
+</section>
+</main>
+</body>
+</html>

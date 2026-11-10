@@ -3,92 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#17242a">
+  <meta name="theme-color" content="#171d20">
   <meta name="description" content="PDAM – Pa' Donde Apunte la Moto. Motos, precios, garantías, comparaciones, equipo, viajes e historias de motociclistas, con humor colombiano y criterio propio.">
   <meta property="og:title" content="PDAM | Pa' Donde Apunte la Moto">
   <meta property="og:description" content="El canal para los que amamos las motos, pero también nos cuestionamos, comparamos, probamos y discutimos.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/pdam-hero-main.webp">
   <title>PDAM | Pa' Donde Apunte la Moto</title>
-  <link rel="icon" href="/assets/pdam-favicon.png">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/png" href="favicon.webp">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#canal">Saltar al contenido</a>
 
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="PDAM, inicio">
+      <img class="brand-logo" src="assets/pdam-logo-medallion.webp" alt="PDAM – Pa' Donde Apunte la Moto">
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#canal">El canal</a>
+      <a href="#temas">Temas</a>
+      <a href="#comunidad">Comunidad</a>
+      <a href="#colaboraciones">Colaboraciones</a>
+      <a href="dossier.html">Dossier</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
   <main>
-    <section class="poster-section" id="inicio" aria-label="Presentación de PDAM">
-      <div class="poster-shell">
-        <div class="poster-loading" id="poster-loading">
-          <span>PDAM</span>
-          <small>Cargando la portada…</small>
-        </div>
-        <img
-          id="pdam-poster"
-          class="poster-image"
-          src="/assets/pdam-home-poster.avif"
-          alt="Ilustración de PDAM: motociclista junto a su Himalayan en un paisaje de montaña, con navegación de madera para motos, precios, garantías, pruebas, equipo, viajes e historias; a la derecha se presenta el canal y abajo aparecen sus temas y comunidad."
-          width="1000"
-          height="563"
-          decoding="async"
-          fetchpriority="high"
-        >
-
-        <nav class="poster-hotspots" aria-label="Navegación de la portada ilustrada">
-          <a class="hotspot logo-hotspot" href="#inicio" aria-label="Inicio de PDAM" title="Inicio"></a>
-
-          <a class="hotspot nav-home" href="#inicio" aria-label="Inicio" title="Inicio"></a>
-          <a class="hotspot nav-channel" href="#canal" aria-label="El canal" title="El canal"></a>
-          <a class="hotspot nav-topics" href="#temas" aria-label="Temas" title="Temas"></a>
-          <a class="hotspot nav-community" href="#comunidad" aria-label="Comunidad" title="Comunidad"></a>
-          <a class="hotspot nav-collabs" href="#colaboraciones" aria-label="Colaboraciones" title="Colaboraciones"></a>
-          <a class="hotspot nav-contact" href="#contacto" aria-label="Contacto" title="Contacto"></a>
-
-          <a class="hotspot sign-motos" href="#tema-motos" aria-label="Motos"></a>
-          <a class="hotspot sign-precios" href="#tema-precios" aria-label="Precios"></a>
-          <a class="hotspot sign-garantias" href="#tema-garantias" aria-label="Garantías"></a>
-          <a class="hotspot sign-pruebas" href="#tema-pruebas" aria-label="Pruebas"></a>
-          <a class="hotspot sign-equipo" href="#tema-equipo" aria-label="Equipo"></a>
-          <a class="hotspot sign-viajes" href="#tema-viajes" aria-label="Viajes"></a>
-          <a class="hotspot sign-historias" href="#tema-historias" aria-label="Historias"></a>
-
-          <a class="hotspot poster-youtube" href="#canal" aria-label="Ver videos del canal de YouTube"></a>
-
-          <a class="hotspot topic-one" href="#tema-motos" aria-label="Análisis y comparativos de motos"></a>
-          <a class="hotspot topic-two" href="#tema-precios" aria-label="Precios, mercado y realidad en Colombia"></a>
-          <a class="hotspot topic-three" href="#tema-garantias" aria-label="Garantías, fallas y lo que casi no le dicen"></a>
-          <a class="hotspot topic-four" href="#tema-equipo" aria-label="Equipamiento y tecnología"></a>
-          <a class="hotspot topic-five" href="#tema-viajes" aria-label="Rutas, viajes y experiencias"></a>
-          <a class="hotspot topic-six" href="#tema-historias" aria-label="Historias y cultura motera"></a>
-
-          <a class="hotspot social-youtube" href="#comunidad" aria-label="Comunidad de YouTube"></a>
-          <a class="hotspot social-tiktok" href="#comunidad" aria-label="Comunidad de TikTok"></a>
-          <a class="hotspot social-instagram" href="#comunidad" aria-label="Comunidad de Instagram"></a>
-          <a class="hotspot social-facebook" href="#comunidad" aria-label="Comunidad de Facebook"></a>
-          <a class="hotspot social-views" href="#comunidad" aria-label="Visualizaciones de PDAM"></a>
-        </nav>
+    <section class="hero" id="inicio" aria-label="Presentación de PDAM">
+      <img class="hero-image" src="assets/pdam-hero-main.webp" alt="Motociclista sentado junto a su motocicleta, con una taza en la mano, frente a un paisaje de montañas y una carretera" fetchpriority="high">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">MOTOCICLISMO · COLOMBIA · SIN LIBRETO</p>
+        <h1>PDAM</h1>
+        <p class="hero-subtitle">Pa' Donde Apunte la Moto</p>
+        <p class="hero-description">El canal para quienes aman las motos, pero no se tragan entero el cuento. Comparamos, probamos y hablamos de precios, garantías, equipos, viajes e historias reales, con humor y mirada de motociclista.</p>
+        <a class="hero-button" href="#canal">Conozca el canal <span>↓</span></a>
       </div>
-
-      <nav class="mobile-navigation" aria-label="Navegación">
-        <a href="#inicio">Inicio</a>
-        <a href="#canal">El canal</a>
-        <a href="#temas">Temas</a>
-        <a href="#comunidad">Comunidad</a>
-        <a href="#colaboraciones">Colaboraciones</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
+      <div class="hero-caption">MOTOS, HISTORIAS Y UNO QUE OTRO CALDO DE COSTILLA.</div>
     </section>
 
     <section class="channel-section section-wrap" id="canal">
       <div class="section-heading">
         <p class="eyebrow">PA' DONDE APUNTE LA MOTO</p>
-        <h1>El canal para los que amamos las motos, <em>pero no nos tragamos entero el cuento.</em></h1>
+        <h2>El canal para los que amamos las motos, <em>pero no nos tragamos entero el cuento.</em></h2>
         <p class="intro-copy">Hablamos de lo que el motociclista compra, paga, compara, usa y vive. A veces la historia empieza con una garantía; otras, con una diferencia de 24 millones, un accesorio que promete cambiarle la vida o una carretera que se veía mucho más fácil en el mapa.</p>
       </div>
 
       <div class="video-heading">
         <div>
           <span class="section-number">01 / EL CANAL</span>
-          <h2>Videos para mirar la moto <em>con los ojos abiertos.</em></h2>
+          <h3>Videos para mirar la moto <em>con los ojos abiertos.</em></h3>
         </div>
         <p>Una muestra de los temas que encontrará en PDAM. No todo es viaje: también hay preguntas, comparaciones y cuentas que vale la pena sacar antes de comprar.</p>
       </div>
@@ -96,39 +64,27 @@
       <div class="video-grid">
         <a class="video-card" href="https://www.youtube.com/watch?v=9MqGuEITSbM" target="_blank" rel="noopener noreferrer">
           <img src="https://i.ytimg.com/vi/9MqGuEITSbM/hqdefault.jpg" alt="Miniatura: Lo que nunca le dicen sobre la garantía de su moto" loading="lazy">
-          <span>GARANTÍAS</span>
-          <h3>Lo que nunca le dicen sobre la garantía de su moto</h3>
-          <small>Ver video ↗</small>
+          <span>GARANTÍAS</span><h4>Lo que nunca le dicen sobre la garantía de su moto</h4><small>Ver video ↗</small>
         </a>
         <a class="video-card" href="https://www.youtube.com/watch?v=V6BoB0v9DHE" target="_blank" rel="noopener noreferrer">
           <img src="https://i.ytimg.com/vi/V6BoB0v9DHE/hqdefault.jpg" alt="Miniatura: El engaño de los precios de motos en Colombia" loading="lazy">
-          <span>PRECIOS Y MERCADO</span>
-          <h3>El engaño de los precios de motos en Colombia</h3>
-          <small>Ver video ↗</small>
+          <span>PRECIOS Y MERCADO</span><h4>El engaño de los precios de motos en Colombia</h4><small>Ver video ↗</small>
         </a>
         <a class="video-card" href="https://www.youtube.com/watch?v=31vVCcNOPpg" target="_blank" rel="noopener noreferrer">
           <img src="https://i.ytimg.com/vi/31vVCcNOPpg/hqdefault.jpg" alt="Miniatura: El engaño de las deportivas de bajo cilindraje" loading="lazy">
-          <span>COMPARACIONES</span>
-          <h3>El engaño de las deportivas de bajo cilindraje</h3>
-          <small>Ver video ↗</small>
+          <span>COMPARACIONES</span><h4>El engaño de las deportivas de bajo cilindraje</h4><small>Ver video ↗</small>
         </a>
         <a class="video-card" href="https://www.youtube.com/watch?v=W4FkbZ2RxZE" target="_blank" rel="noopener noreferrer">
           <img src="https://i.ytimg.com/vi/W4FkbZ2RxZE/hqdefault.jpg" alt="Miniatura: ¿Realmente necesita una pantalla en la moto?" loading="lazy">
-          <span>EQUIPO Y TECNOLOGÍA</span>
-          <h3>¿Realmente necesita una pantalla en la moto?</h3>
-          <small>Ver video ↗</small>
+          <span>EQUIPO Y TECNOLOGÍA</span><h4>¿Realmente necesita una pantalla en la moto?</h4><small>Ver video ↗</small>
         </a>
         <a class="video-card" href="https://www.youtube.com/watch?v=mE85kNhwhkg" target="_blank" rel="noopener noreferrer">
           <img src="https://i.ytimg.com/vi/mE85kNhwhkg/hqdefault.jpg" alt="Miniatura: El engaño de las motos de aventura" loading="lazy">
-          <span>MOTOS DE AVENTURA</span>
-          <h3>El engaño de las motos de aventura</h3>
-          <small>Ver video ↗</small>
+          <span>MOTOS DE AVENTURA</span><h4>El engaño de las motos de aventura</h4><small>Ver video ↗</small>
         </a>
         <a class="video-card" href="https://www.youtube.com/watch?v=WW856O2JzzY" target="_blank" rel="noopener noreferrer">
           <img src="https://i.ytimg.com/vi/WW856O2JzzY/hqdefault.jpg" alt="Miniatura: Cómo planear un viaje en moto, la cruda realidad" loading="lazy">
-          <span>RUTAS Y VIAJES</span>
-          <h3>¿Cómo planear un viaje en moto? La cruda realidad</h3>
-          <small>Ver video ↗</small>
+          <span>RUTAS Y VIAJES</span><h4>¿Cómo planear un viaje en moto? La cruda realidad</h4><small>Ver video ↗</small>
         </a>
       </div>
       <p class="channel-note">La carretera también tiene su lugar. Pero antes de salir, durante el camino y cuando vuelve a casa, hay mucho más de qué hablar.</p>
@@ -140,121 +96,94 @@
         <h2>Una moto da para mucho más que <em>hablar de cilindrada.</em></h2>
       </div>
       <div class="topic-grid">
-        <article class="topic-card" id="tema-motos">
-          <span class="topic-icon">🏍</span>
-          <span class="topic-label">MOTOS</span>
-          <h3>Comparar antes de enamorarse</h3>
-          <p>Modelos, segmentos, fichas técnicas y experiencia real. Porque la foto del concesionario no paga la cuota.</p>
-        </article>
-        <article class="topic-card" id="tema-precios">
-          <span class="topic-icon">💰</span>
-          <span class="topic-label">PRECIOS Y MERCADO</span>
-          <h3>La cuenta también hace parte del viaje</h3>
-          <p>Precios en Colombia, diferencias entre mercados, costos y decisiones de compra. Saquemos la calculadora antes de sacar la tarjeta.</p>
-        </article>
-        <article class="topic-card" id="tema-garantias">
-          <span class="topic-icon">🛡</span>
-          <span class="topic-label">GARANTÍAS Y FALLAS</span>
-          <h3>La letra pequeña no se lee sola</h3>
-          <p>Garantías, problemas, mantenimientos y esas cosas que uno descubre cuando ya dejó la moto en el taller.</p>
-        </article>
-        <article class="topic-card" id="tema-pruebas">
-          <span class="topic-icon">⚙</span>
-          <span class="topic-label">PRUEBAS Y COMPARACIONES</span>
-          <h3>Lo que dice el papel y lo que pasa en la vía</h3>
-          <p>Pruebas, comparativos y comportamiento real. Sin hacerle venia a una ficha técnica ni al logo del tanque.</p>
-        </article>
-        <article class="topic-card" id="tema-equipo">
-          <span class="topic-icon">🧰</span>
-          <span class="topic-label">EQUIPO Y TECNOLOGÍA</span>
-          <h3>¿Sirve o es otro chicharrón?</h3>
-          <p>Cascos, accesorios, pantallas, cámaras y tecnología. Lo útil se nota; lo demás también ocupa espacio en la maleta.</p>
-        </article>
-        <article class="topic-card" id="tema-viajes">
-          <span class="topic-icon">🗺</span>
-          <span class="topic-label">VIAJES Y EXPERIENCIAS</span>
-          <h3>También hay kilómetros por contar</h3>
-          <p>Rutas, destinos, hospedajes, restaurantes y experiencias. Lo bonito, lo complicado y lo que no aparece en la foto.</p>
-        </article>
-        <article class="topic-card topic-card-wide" id="tema-historias">
-          <span class="topic-icon">☕</span>
-          <span class="topic-label">HISTORIAS Y CULTURA MOTERA</span>
-          <h3>Los motociclistas también tenemos cuento</h3>
-          <p>Personajes, costumbres, conversaciones y situaciones de la vida motera. Con humor colombiano, opiniones y, cuando la parada lo permite, una arepa y un caldo de costilla.</p>
-        </article>
+        <article class="topic-card"><span class="topic-icon">🏍</span><span class="topic-label">MOTOS</span><h3>Comparar antes de enamorarse</h3><p>Modelos, segmentos, fichas técnicas y experiencia real. Porque la foto del concesionario no paga la cuota.</p></article>
+        <article class="topic-card"><span class="topic-icon">💰</span><span class="topic-label">PRECIOS Y MERCADO</span><h3>La cuenta también hace parte del viaje</h3><p>Precios en Colombia, diferencias entre mercados, costos y decisiones de compra. Saquemos la calculadora antes de sacar la tarjeta.</p></article>
+        <article class="topic-card"><span class="topic-icon">🛡</span><span class="topic-label">GARANTÍAS Y FALLAS</span><h3>La letra pequeña no se lee sola</h3><p>Garantías, problemas, mantenimientos y esas cosas que uno descubre cuando ya dejó la moto en el taller.</p></article>
+        <article class="topic-card"><span class="topic-icon">⚙</span><span class="topic-label">PRUEBAS Y COMPARACIONES</span><h3>Lo que dice el papel y lo que pasa en la vía</h3><p>Pruebas, comparativos y comportamiento real. Sin hacerle venia a una ficha técnica ni al logo del tanque.</p></article>
+        <article class="topic-card"><span class="topic-icon">🧰</span><span class="topic-label">EQUIPO Y TECNOLOGÍA</span><h3>¿Sirve o es otro chicharrón?</h3><p>Cascos, accesorios, pantallas, cámaras y tecnología. Lo útil se nota; lo demás también ocupa espacio en la maleta.</p></article>
+        <article class="topic-card"><span class="topic-icon">🗺</span><span class="topic-label">VIAJES Y EXPERIENCIAS</span><h3>También hay kilómetros por contar</h3><p>Rutas, destinos, hospedajes, restaurantes y experiencias. Lo bonito, lo complicado y lo que no aparece en la foto.</p></article>
+        <article class="topic-card topic-card-wide"><span class="topic-icon">☕</span><span class="topic-label">HISTORIAS Y CULTURA MOTERA</span><h3>Los motociclistas también tenemos cuento</h3><p>Personajes, costumbres, conversaciones y situaciones de la vida motera. Con humor colombiano, opiniones y, cuando la parada lo permite, una arepa y un caldo de costilla.</p></article>
       </div>
     </section>
 
     <section class="community-section section-wrap" id="comunidad">
-      <div class="community-copy">
-        <p class="eyebrow">03 / LA COMUNIDAD</p>
-        <h2>Esto no rueda <em>solo.</em></h2>
-        <p>PDAM se mueve entre YouTube, TikTok, Instagram y Facebook. Detrás de cada cifra hay gente que pregunta, comenta, compara motos y comparte sus propios cuentos.</p>
+      <div class="community-copy"><p class="eyebrow">03 / LA COMUNIDAD</p><h2>Esto no rueda <em>solo.</em></h2><p>PDAM se mueve entre YouTube, TikTok, Instagram y Facebook. Detrás de cada cifra hay gente que pregunta, comenta, compara motos y comparte sus propios cuentos.</p></div>
+      <div class="stats-grid" aria-label="Comunidad de PDAM en redes sociales">
+        <div class="stat">
+          <svg class="social-icon" viewBox="0 0 24 24" role="img" aria-label="YouTube"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg>
+          <span class="stat-platform">YouTube</span>
+          <strong>5.110</strong>
+          <small>Suscriptores</small>
+        </div>
+        <div class="stat">
+          <svg class="social-icon" viewBox="0 0 24 24" role="img" aria-label="Instagram"><path class="icon-outline" d="M7 2.8h10A4.2 4.2 0 0 1 21.2 7v10a4.2 4.2 0 0 1-4.2 4.2H7A4.2 4.2 0 0 1 2.8 17V7A4.2 4.2 0 0 1 7 2.8Z"/><circle class="icon-outline" cx="12" cy="12" r="4.1"/><circle cx="17.7" cy="6.7" r="1.1"/></svg>
+          <span class="stat-platform">Instagram</span>
+          <strong>3.553</strong>
+          <small>Seguidores</small>
+        </div>
+        <div class="stat">
+          <svg class="social-icon" viewBox="0 0 24 24" role="img" aria-label="Facebook"><path d="M13.6 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.7V3.7c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2H7.4V13h2.8v8h3.4Z"/></svg>
+          <span class="stat-platform">Facebook</span>
+          <strong>9.985</strong>
+          <small>Me gusta de la página</small>
+        </div>
+        <div class="stat">
+          <svg class="social-icon" viewBox="0 0 24 24" role="img" aria-label="TikTok"><path d="M19.2 7.1a5.8 5.8 0 0 1-3.8-3.8V2h-3.5v13.2a2.7 2.7 0 1 1-2.7-2.7c.3 0 .6 0 .9.1V9a6.3 6.3 0 1 0 5.3 6.2V8.6a9.2 9.2 0 0 0 3.8 1.1V7.1Z"/></svg>
+          <span class="stat-platform">TikTok</span>
+          <strong>3.100</strong>
+          <small>Seguidores</small>
+        </div>
       </div>
-      <div class="stats-grid">
-        <div class="stat"><span class="stat-platform">YOUTUBE</span><strong>1.800</strong><small>Suscriptores</small></div>
-        <div class="stat"><span class="stat-platform">TIKTOK</span><strong>2.800</strong><small>Seguidores</small></div>
-        <div class="stat"><span class="stat-platform">INSTAGRAM</span><strong>2.600</strong><small>Seguidores</small></div>
-        <div class="stat"><span class="stat-platform">FACEBOOK</span><strong>900</strong><small>Seguidores</small></div>
-        <div class="stat stat-total"><span class="stat-platform">PDAM EN TODAS PARTES</span><strong>383.000+</strong><small>Visualizaciones totales</small></div>
-      </div>
+      <p class="stats-note">Corte de datos: 10 de noviembre de 2026. YouTube y Facebook fueron consultados en Windsor.ai; Instagram y TikTok, según las cifras compartidas por PDAM.</p>
     </section>
 
     <section class="collab-section section-wrap" id="colaboraciones">
-      <div class="collab-main">
-        <p class="eyebrow">04 / COLABORACIONES</p>
-        <h2>¿Tiene algo que le pueda interesar <em>a un motociclista?</em></h2>
-        <p>Una marca, un concesionario, un taller, una tienda de accesorios, un restaurante, un alojamiento, un evento o un destino. Cuéntenos qué tiene y por qué podría interesarle a la comunidad de PDAM.</p>
-        <p>Podemos conocer el lugar o la propuesta y, si tiene sentido para el canal, incorporarla a nuestro contenido. La visita, la mención o una integración comercial se conversan con claridad antes de grabar.</p>
-        <a class="action-button" href="https://wa.me/573245929902?text=Hola%2C%20quiero%20proponer%20una%20colaboraci%C3%B3n%20con%20PDAM." target="_blank" rel="noopener noreferrer">Proponer una colaboración ↗</a>
+      <div class="collab-main"><p class="eyebrow">04 / COLABORACIONES</p><h2>¿Tiene algo que le pueda interesar <em>a un motociclista?</em></h2><p>Una marca, un concesionario, un taller, una tienda de accesorios, un restaurante, un alojamiento, un evento o un destino. Cuéntenos qué tiene y por qué podría interesarle a la comunidad de PDAM.</p><p>Podemos conocer el lugar o la propuesta y, si tiene sentido para el canal, incorporarla a nuestro contenido. La visita, la mención o una integración comercial se conversan con claridad antes de grabar.</p><a class="action-button" href="https://wa.me/573245929902?text=Hola%2C%20quiero%20proponer%20una%20colaboraci%C3%B3n%20con%20PDAM." target="_blank" rel="noopener noreferrer">Proponer una colaboración ↗</a></div>
+      <aside class="editorial-note"><span>UNA COSA DEBE QUEDAR CLARA</span><h3>La colaboración no compra nuestra opinión.</h3><p>PDAM crea y publica su propio contenido para su comunidad. No hacemos videos institucionales por encargo ni entregamos videos para las redes de terceros. Una alianza comercial no convierte una opinión en elogio.</p></aside>
+    </section>
+
+    <section class="dossier-section section-wrap" id="dossier">
+      <div class="dossier-section-copy">
+        <p class="eyebrow">05 / MEDIA KIT COMERCIAL</p>
+        <h2>Conozca PDAM <em>antes de conversar.</em></h2>
+        <p>En nuestro dossier encontrará quiénes somos, de qué habla el canal, cómo participa la comunidad y qué tipo de colaboraciones tienen sentido para PDAM.</p>
+        <div class="dossier-actions">
+          <a class="action-button dossier-view" href="dossier.html">Ver dossier ↗</a>
+          <a class="action-button dossier-download" href="assets/PDAM-Media-Kit-2026.pdf" download>Descargar PDF ↓</a>
+        </div>
       </div>
-      <aside class="editorial-note">
-        <span>UNA COSA DEBE QUEDAR CLARA</span>
-        <h3>La colaboración no compra nuestra opinión.</h3>
-        <p>PDAM crea y publica su propio contenido para su comunidad. No hacemos videos institucionales por encargo ni entregamos videos para las redes de terceros. Una alianza comercial no convierte una opinión en elogio.</p>
-      </aside>
+      <a class="dossier-cover-link" href="dossier.html" aria-label="Abrir dossier comercial PDAM">
+        <img src="assets/pdam-dossier-emblem.webp" alt="Emblema de PDAM en estilo ilustrado">
+        <span>MEDIA KIT · 2026</span>
+      </a>
     </section>
 
     <section class="contact-section section-wrap" id="contacto">
-      <div>
-        <p class="eyebrow">05 / CONTACTO</p>
-        <h2>¿Tiene una propuesta? <em>Hablemos.</em></h2>
-        <p>Escríbanos y cuéntenos qué tiene en mente. Revisamos cada propuesta y conversamos si encaja con PDAM.</p>
-      </div>
-      <div class="contact-actions">
-        <a class="contact-button whatsapp" href="https://wa.me/573245929902?text=Hola%2C%20quiero%20invitar%20a%20PDAM%20a%20conocer%20mi%20establecimiento%20o%20proyecto." target="_blank" rel="noopener noreferrer">WhatsApp · +57 324 592 9902 ↗</a>
-        <a class="contact-button email" href="mailto:padondeapuntelamoto@gmail.com?subject=Invitaci%C3%B3n%20o%20colaboraci%C3%B3n%20con%20PDAM">padondeapuntelamoto@gmail.com ↗</a>
-      </div>
+      <div><p class="eyebrow">06 / CONTACTO</p><h2>¿Tiene una propuesta? <em>Hablemos.</em></h2><p>Escríbanos y cuéntenos qué tiene en mente. Revisamos cada propuesta y conversamos si encaja con PDAM.</p></div>
+      <div class="contact-actions"><a class="contact-button whatsapp" href="https://wa.me/573245929902?text=Hola%2C%20quiero%20invitar%20a%20PDAM%20a%20conocer%20mi%20establecimiento%20o%20proyecto." target="_blank" rel="noopener noreferrer">WhatsApp · +57 324 592 9902 ↗</a><a class="contact-button email" href="mailto:padondeapuntelamoto@gmail.com?subject=Invitaci%C3%B3n%20o%20colaboraci%C3%B3n%20con%20PDAM">padondeapuntelamoto@gmail.com ↗</a></div>
     </section>
   </main>
 
+
   <footer class="site-footer">
     <a class="footer-brand" href="#inicio">PDAM · PA' DONDE APUNTE LA MOTO</a>
-    <div class="footer-links">
-      <a href="politica-privacidad.html">Política de privacidad</a>
-      <a href="eliminacion-de-datos.html">Datos personales</a>
-      <a href="#inicio">Volver arriba ↑</a>
-    </div>
+    <div class="footer-links"><a href="politica-privacidad.html">Política de privacidad</a><a href="eliminacion-de-datos.html">Datos personales</a><a href="#inicio">Volver arriba ↑</a></div>
     <small>© PDAM · Colombia</small>
   </footer>
 
   <script>
-    (function () {
-      const image = document.getElementById('pdam-poster');
-      const loading = document.getElementById('poster-loading');
-      function showPoster() {
-        loading.hidden = true;
-        image.classList.add('is-loaded');
-      }
-      function showError() {
-        loading.innerHTML = '<span>PDAM</span><small>No se pudo cargar la ilustración. Recargue la página.</small>';
-      }
-      if (image.complete && image.naturalWidth > 0) showPoster();
-      else {
-        image.addEventListener('load', showPoster, { once: true });
-        image.addEventListener('error', showError, { once: true });
-      }
-    })();
-  </script>t>
+    const menuButton = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.main-nav');
+    menuButton.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+      menuButton.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+    });
+    menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      menu.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+      menuButton.setAttribute('aria-label', 'Abrir menú');
+    }));
+  </script>
 </body>
 </html>

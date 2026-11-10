@@ -1,16 +1,30 @@
-# PDAM — Pa' Donde Apunte la Moto
+# PDAM – Pa' Donde Apunte la Moto
 
-Sitio institucional de PDAM como medio independiente de motociclismo, viajes y cultura motera.
+Sitio estático listo para publicar en Vercel o GitHub Pages.
 
-## Estructura
-- `index.html`: dossier digital del medio, comunidad, contenido, colaboraciones y contacto.
-- `styles.css`: diseño adaptable a escritorio, tableta y celular.
-- `script.js`: menú móvil y año dinámico del pie de página.
-- `assets/`: fotografías e identidad visual de PDAM.
-- `politica-privacidad.html` y `eliminacion-de-datos.html`: información sobre tratamiento de datos.
+## Contenido
+- `index.html`: portada, navegación y secciones de PDAM.
+- `styles.css`: estilos responsive, tipografía cómic y barra superior clásica oscura fija.
+- `dossier.html`: página independiente del Media Kit comercial.
+- `assets/PDAM-Media-Kit-2026.pdf`: dossier descargable e imprimible.
+- `assets/`: imágenes de portada, logo, dossier y recursos gráficos.
+- `politica-privacidad.html` y `eliminacion-de-datos.html`: páginas legales.
 
-## Enfoque editorial y comercial
-PDAM publica contenido en sus propios canales. La página invita a establecimientos, destinos y marcas a proponer visitas o colaboraciones. No ofrece producción audiovisual institucional por encargo ni entrega piezas de video para terceros. Las integraciones comerciales se acuerdan previamente y no alteran la independencia editorial.
+## Cambios incluidos
+- Barra superior clásica oscura, fija al hacer scroll, con logo a la izquierda.
+- Imagen del motociclista y la moto a todo el ancho; presentación más arriba y algo más ancha.
+- Tipografía de párrafos Comic Neue; títulos Bangers.
+- Rótulo de colaboraciones en café para mejorar el contraste.
+- Sección del Media Kit con enlaces a `dossier.html` y al PDF.
+- Comunidad ordenada en cuatro tarjetas: YouTube, Instagram, Facebook y TikTok, con iconos monocromáticos. YouTube: 5.110 suscriptores; Instagram: 3.553 seguidores; Facebook: 9.985 Me gusta; TikTok: 3.100 seguidores.
 
-## Publicación
-El proyecto es estático y puede desplegarse directamente desde la rama `main` en Vercel. No requiere variables de entorno, base de datos ni claves secretas.
+## Publicar
+1. Descomprima el ZIP.
+2. Suba todo el contenido de esta carpeta a la raíz del repositorio `nastycorp/pdam-tours`.
+3. Incluya la carpeta `assets` completa y los archivos `dossier.html`, `index.html` y `styles.css`.
+4. Vercel desplegará el sitio al detectar el nuevo commit.
+
+No requiere Node, npm ni compilación: es HTML, CSS y JavaScript nativo.
+
+## Nota sobre métricas
+Las cifras incluidas en esta entrega son una fotografía con fecha de corte 10 de noviembre de 2026, no una conexión automática en vivo. La actualización automática para las cuatro plataformas requiere terminar las autorizaciones de Instagram y TikTok y configurar un endpoint seguro para consumir los datos desde el sitio.
