@@ -3,394 +3,258 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101114">
-  <meta name="description" content="PDAM – Pa' Donde Apunte la Moto. Hablamos de motos, precios, garantías, comparaciones, tecnología y vida motera, con humor colombiano y criterio propio.">
-  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#17242a">
+  <meta name="description" content="PDAM – Pa' Donde Apunte la Moto. Motos, precios, garantías, comparaciones, equipo, viajes e historias de motociclistas, con humor colombiano y criterio propio.">
   <meta property="og:title" content="PDAM | Pa' Donde Apunte la Moto">
-  <meta property="og:description" content="Precios, garantías, comparaciones, tecnología y vida motera. PDAM habla de motos sin tanta carreta.">
-  <meta property="og:image" content="assets/pdam-hero.png">
-  <title>PDAM | Pa' Donde Apunte la Moto — Medio independiente</title>
-  <link rel="icon" type="image/png" href="assets/pdam-favicon.png">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="assets/pdam-favicon.png">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap');
-:root{--ink:#101114;--ink-2:#17191e;--paper:#f1f1ed;--white:#fff;--muted:#a9abb2;--red:#e32934;--line:rgba(255,255,255,.15);--display:'Barlow Condensed',Impact,'Arial Narrow',sans-serif;--body:'DM Sans',Arial,sans-serif;--max:1240px}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--ink);color:var(--white);font-family:var(--body);-webkit-font-smoothing:antialiased}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}.topline{height:30px;padding:0 5.5%;display:flex;justify-content:space-between;align-items:center;background:#090a0c;color:#a6a7ac;font-size:.58rem;letter-spacing:.16em;font-weight:700}.site-header{height:82px;padding:0 5.5%;display:flex;align-items:center;justify-content:space-between;gap:28px;background:rgba(16,17,20,.97);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;backdrop-filter:blur(16px)}.brand{display:flex;align-items:center;gap:12px;min-width:245px}.brand-symbol{width:45px;height:45px;border-radius:50%;overflow:hidden;background:#fff;border:1px solid #fff;flex:none}.brand-symbol img{width:100%;height:100%;object-fit:cover}.brand-type{display:flex;flex-direction:column;line-height:1}.brand-type strong{font:900 1.9rem/.9 var(--display);letter-spacing:.02em}.brand-type small{font-size:.53rem;letter-spacing:.08em;color:#c8c9cd;margin-top:7px;font-weight:700}.main-nav{display:flex;align-items:center;gap:clamp(16px,2.5vw,34px)}.main-nav a{font-size:.73rem;font-weight:700;color:#d7d8dc;transition:color .2s}.main-nav a:hover{color:var(--red)}.button{min-height:48px;padding:0 22px;display:inline-flex;justify-content:center;align-items:center;gap:16px;background:var(--red);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.02em;border:1px solid var(--red);transition:transform .2s,background .2s,border-color .2s}.button:hover{transform:translateY(-2px);background:#c91c27;border-color:#c91c27}.button span{font-size:1rem}.button-small{min-height:41px;padding:0 16px;font-size:.68rem}.menu-toggle{display:none;background:none;border:0;color:#fff;font-size:1.7rem;cursor:pointer}.hero{min-height:700px;position:relative;display:flex;align-items:center;overflow:hidden;background:#17191e}.hero-photo,.hero-overlay{position:absolute;inset:0}.hero-photo{background-image:url('assets/pdam-hero.png');background-size:cover;background-position:center 48%;transform:scale(1.015)}.hero-overlay{background:linear-gradient(90deg,rgba(8,9,11,.94) 0%,rgba(8,9,11,.83) 34%,rgba(8,9,11,.26) 78%),linear-gradient(0deg,rgba(8,9,11,.57),transparent 50%)}.hero-content{position:relative;z-index:1;width:min(760px,76%);padding:95px 0 100px 8.3%}.eyebrow{display:flex;align-items:center;gap:10px;font-size:.62rem;letter-spacing:.19em;font-weight:700;color:#c9cbd0}.eyebrow>span,.section-kicker:before{width:24px;height:2px;background:var(--red);display:inline-block}.hero h1{margin:29px 0 22px;font:900 clamp(4.3rem,8vw,8rem)/.83 var(--display);letter-spacing:-.035em;text-transform:uppercase}.hero h1 em{font-style:normal;color:var(--red)}.hero-copy{max-width:560px;color:#dadbe0;font-size:.93rem;line-height:1.85}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.button-outline{background:transparent;border-color:rgba(255,255,255,.5)}.button-outline:hover{background:#fff;color:var(--ink);border-color:#fff}.hero-meta{display:flex;align-items:center;gap:10px;margin-top:60px;color:#c5c7cc;font-size:.58rem;font-weight:700;letter-spacing:.15em}.red-dot{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 0 5px rgba(227,41,52,.15)}.hero-index{position:absolute;right:5.5%;bottom:36px;color:rgba(255,255,255,.62);font:700 .65rem var(--display);letter-spacing:.15em}.statement-strip{min-height:76px;display:flex;justify-content:center;align-items:center;gap:13px;flex-wrap:wrap;padding:18px;background:var(--red);font:700 clamp(1rem,2.2vw,1.65rem) var(--display);letter-spacing:.08em}.statement-strip strong{font-weight:900}.strip-mark{margin-left:30px;font:700 .55rem var(--body);letter-spacing:.16em;opacity:.8}.section{padding:106px 8%;max-width:1440px;margin:auto}.section-kicker{display:flex;align-items:center;gap:14px;color:#d7d8dc;font-size:.61rem;letter-spacing:.18em;font-weight:700;margin-bottom:46px}.section-kicker span{color:var(--red);font:800 1.2rem var(--display);letter-spacing:0}.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:9%;align-items:start}.about h2,.community h2,.content h2,.collab h2,.contact h2{margin:0;font:800 clamp(2.8rem,5.2vw,5.4rem)/.92 var(--display);letter-spacing:-.025em;text-transform:uppercase}.about h2 em,.community h2 em,.content h2 em,.collab h2 em,.contact h2 em{font-style:normal;color:var(--red)}.about-copy{padding-top:4px}.about-copy p{color:#c5c7cd;font-size:.85rem;line-height:1.9;margin:0 0 18px}.about-copy .lead{color:#fff;font-size:1rem;font-weight:600;line-height:1.65}.about-photo-row{display:grid;grid-template-columns:1.12fr .88fr;gap:14px;margin-top:64px}.about-photo{margin:0;position:relative;height:310px;overflow:hidden;background:#25272d}.about-photo img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.about-photo:hover img{transform:scale(1.035)}.about-photo:after{content:'';position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.7))}.about-photo figcaption{position:absolute;z-index:1;bottom:17px;left:20px;font-size:.56rem;letter-spacing:.15em;font-weight:700}.community{max-width:none;background:#f0f0ec;color:var(--ink)}.community .section-kicker{color:#666970}.community-head{display:flex;justify-content:space-between;align-items:end;gap:40px}.community-head h2{font-size:clamp(2.9rem,5vw,5rem)}.community-head p{max-width:325px;color:#666970;font-size:.83rem;line-height:1.8;margin:0 0 5px}.metric-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:53px;border-top:1px solid #c6c7c4;border-bottom:1px solid #c6c7c4}.metric{min-height:165px;padding:28px 24px;display:flex;flex-direction:column;border-right:1px solid #c6c7c4}.metric:first-child{padding-left:0}.metric:last-child{border:0}.metric-platform{font-size:.61rem;color:var(--red);font-weight:800;letter-spacing:.15em}.metric strong{font:800 clamp(2.7rem,4.6vw,4.7rem)/.95 var(--display);margin:13px 0 5px;letter-spacing:-.02em}.metric small{color:#6d7077;font-size:.72rem}.performance{margin-top:38px;padding:25px 28px;background:var(--ink);color:#fff;display:grid;grid-template-columns:1.2fr repeat(3,1fr);gap:16px;align-items:center}.performance-label{display:flex;flex-direction:column;gap:10px}.performance-label span{font:800 1.3rem var(--display);color:#fff}.performance-label small{font-size:.59rem;color:#a7a9b0;letter-spacing:.11em}.performance-stat{padding-left:22px;border-left:1px solid #44464c;display:flex;flex-direction:column;gap:5px}.performance-stat strong{font:800 2.2rem/.95 var(--display);color:var(--red)}.performance-stat span{font-size:.68rem;color:#c5c7cd}.data-note{max-width:900px;color:#747780;font-size:.62rem;line-height:1.7;margin:15px 0 0}.content{padding-top:112px;padding-bottom:118px}.content-heading{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:43px}.content-heading>p{max-width:325px;margin:0 0 4px;color:#b9bbc2;font-size:.82rem;line-height:1.8}.content-grid{display:grid;grid-template-columns:1.2fr .8fr;grid-template-rows:270px 270px;gap:14px}.content-card{position:relative;overflow:hidden;background:#26282d}.content-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.content-card:hover img{transform:scale(1.04)}.content-card-shade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(7,8,10,.93),rgba(7,8,10,.04) 75%)}.content-card-copy{position:absolute;left:25px;right:25px;bottom:23px}.content-card-copy span{font-size:.56rem;letter-spacing:.16em;font-weight:700;color:#e7e7e9}.content-card-copy h3{font:800 2rem/.98 var(--display);text-transform:uppercase;margin:9px 0}.content-card-copy p{max-width:440px;color:#d0d1d5;font-size:.7rem;line-height:1.6;margin:0}.content-card-large{grid-row:span 2}.content-card-large .content-card-copy h3{font-size:3rem}.content-card-wide{grid-column:span 2}.collab{max-width:none;background:#181a1f}.collab-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:9%;align-items:start}.collab-intro .eyebrow{margin-bottom:27px}.collab-intro h2{font-size:clamp(2.8rem,5vw,5.2rem)}.collab-intro>p:not(.eyebrow){max-width:540px;margin:24px 0 28px;color:#c8cad0;font-size:.85rem;line-height:1.9}.collab-detail{border-top:1px solid #484a50}.collab-item{display:grid;grid-template-columns:45px 1fr;gap:15px;padding:25px 0;border-bottom:1px solid #484a50}.collab-number{color:var(--red);font:800 1.5rem var(--display)}.collab-item h3{margin:0 0 7px;font:700 1.45rem var(--display);text-transform:uppercase}.collab-item p{margin:0;color:#b9bbc2;font-size:.76rem;line-height:1.7}.editorial-rule{margin-top:22px;padding:20px;background:#24262c;border-left:3px solid var(--red)}.editorial-rule span{font:800 1rem var(--display);letter-spacing:.05em}.editorial-rule p{margin:7px 0 0;color:#c7c9cf;font-size:.73rem;line-height:1.7}.invite-band{padding:40px 8%;display:flex;justify-content:space-between;align-items:center;gap:30px;background:var(--red)}.invite-band>div>span{font-size:.59rem;letter-spacing:.17em;font-weight:700}.invite-band h2{margin:7px 0 0;font:800 clamp(2.1rem,4vw,3.7rem)/.95 var(--display);text-transform:uppercase}.button-light{background:#fff;border-color:#fff;color:var(--ink)}.button-light:hover{background:#eee;border-color:#eee;color:var(--ink)}.contact-grid{display:grid;grid-template-columns:1fr .82fr;gap:10%;align-items:center}.contact-grid>div:first-child>p{max-width:550px;margin:24px 0 0;color:#c1c3c9;font-size:.85rem;line-height:1.9}.contact-card{padding:32px;background:#1b1d22;border:1px solid #33353b;border-top:3px solid var(--red)}.contact-label{display:block;color:#aaaeb6;font-size:.58rem;letter-spacing:.16em;font-weight:700;margin-bottom:20px}.contact-link{display:flex;flex-direction:column;gap:8px;padding:20px 0;border-top:1px solid #393b42}.contact-link span{font-size:.56rem;letter-spacing:.16em;color:#aaaeb6;font-weight:700}.contact-link strong{font-size:1rem;overflow-wrap:anywhere}.contact-link:hover strong{color:var(--red)}.contact-card>small{display:block;border-top:1px solid #393b42;padding-top:18px;color:#8e9199;font-size:.62rem}.site-footer{padding:38px 6%;display:grid;grid-template-columns:1.1fr .8fr 1fr;gap:25px;align-items:center;background:#08090b;border-top:1px solid var(--line)}.footer-brand{display:flex;align-items:center;gap:14px;font-size:.66rem;font-weight:800;letter-spacing:.06em;line-height:1.5}.footer-logo{font:900 2.4rem/.9 var(--display);color:var(--red)}.footer-brand small{color:#989ba2;font-size:.52rem;letter-spacing:.09em}.site-footer>p{color:#aeb0b6;font-size:.66rem;line-height:1.7;margin:0}.footer-links{display:flex;justify-content:flex-end;gap:18px;flex-wrap:wrap}.footer-links a{color:#c1c3c9;font-size:.62rem}.footer-links a:hover{color:var(--red)}.copyright{grid-column:1/-1;border-top:1px solid #303238;padding-top:15px;color:#7f828a;font-size:.58rem}
-@media(max-width:900px){.brand{min-width:210px}.header-cta{display:none}.main-nav{gap:18px}.section{padding-left:6%;padding-right:6%}.about-grid,.collab-grid{gap:5%}.performance{grid-template-columns:1fr 1fr}.performance-label{grid-column:span 2}.performance-stat:nth-child(2){border:0;padding-left:0}.content-grid{grid-template-rows:235px 235px}.contact-grid{gap:5%}}
-@media(max-width:680px){.topline{padding:0 5%;font-size:.48rem;letter-spacing:.09em}.site-header{height:70px;padding:0 5%}.brand{min-width:0}.brand-symbol{width:39px;height:39px}.brand-type strong{font-size:1.65rem}.brand-type small{font-size:.45rem}.menu-toggle{display:block;margin-left:auto}.main-nav{display:none;position:absolute;top:69px;left:0;right:0;background:#101114;padding:22px 6%;border-bottom:1px solid #393b42;flex-direction:column;align-items:flex-start;gap:20px}.main-nav.open{display:flex}.main-nav a{font-size:.85rem}.hero{min-height:670px}.hero-photo{background-position:62% center}.hero-overlay{background:linear-gradient(90deg,rgba(8,9,11,.94),rgba(8,9,11,.53)),linear-gradient(0deg,rgba(8,9,11,.55),transparent)}.hero-content{width:100%;padding:76px 6% 90px}.hero h1{font-size:clamp(4rem,17vw,6.1rem)}.hero-copy{font-size:.83rem;max-width:480px}.hero-actions{align-items:stretch;flex-direction:column;max-width:330px}.hero-meta{margin-top:38px;font-size:.5rem;line-height:1.6}.hero-index{font-size:.53rem;right:6%;bottom:20px}.statement-strip{gap:7px;padding:20px 10px;text-align:center}.strip-mark{width:100%;margin:4px 0 0}.section{padding:76px 6%}.section-kicker{margin-bottom:33px}.about-grid,.community-head,.content-heading,.collab-grid,.contact-grid{grid-template-columns:1fr;display:grid;gap:24px}.about h2,.community h2,.content h2,.collab h2,.contact h2{font-size:clamp(2.65rem,12vw,4.1rem)}.about-photo-row{grid-template-columns:1fr;gap:10px;margin-top:36px}.about-photo{height:235px}.community-head p{max-width:450px}.metric-grid{grid-template-columns:1fr 1fr;margin-top:30px}.metric{min-height:135px;padding:20px 14px;border-bottom:1px solid #c6c7c4}.metric:first-child{padding-left:14px}.metric:nth-child(2){border-right:0}.metric:nth-child(3){border-bottom:0}.metric:last-child{border-bottom:0}.metric strong{font-size:3rem}.metric small{font-size:.63rem}.performance{grid-template-columns:1fr 1fr;padding:22px 17px;gap:18px}.performance-label{grid-column:span 2}.performance-stat{padding-left:14px}.performance-stat:nth-child(2){padding-left:0}.performance-stat strong{font-size:1.9rem}.content-heading>p{max-width:470px}.content-grid{grid-template-columns:1fr;grid-template-rows:repeat(4,225px)}.content-card-large{grid-row:auto}.content-card-wide{grid-column:auto}.content-card-large .content-card-copy h3{font-size:2.2rem}.content-card-copy h3{font-size:1.7rem}.collab-intro>p:not(.eyebrow){font-size:.8rem}.collab-detail{margin-top:8px}.invite-band{padding:34px 6%;align-items:flex-start;flex-direction:column;gap:22px}.invite-band h2{font-size:2.6rem}.contact-grid{gap:32px}.contact-card{padding:25px 20px}.contact-link strong{font-size:.88rem}.site-footer{grid-template-columns:1fr 1fr;padding:32px 6%;gap:21px}.site-footer>p{grid-column:1/-1;grid-row:2}.footer-links{grid-column:1/-1;justify-content:flex-start}.copyright{grid-column:1/-1}}
-@media(max-width:360px){.topline span:last-child{font-size:.42rem}.metric strong{font-size:2.55rem}.metric{padding:16px 10px}.metric:first-child{padding-left:10px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
-
-  
-/* PDAM editorial update: motorcycle market, opinion and everyday rider culture */
-.channel-note{margin-top:34px;padding:25px 28px;background:#1b1d22;border-left:3px solid var(--red);max-width:900px}
-.channel-note strong{font:800 1.45rem var(--display);letter-spacing:.015em;text-transform:uppercase}
-.channel-note p{margin:9px 0 0;color:#c4c6cc;font-size:.78rem;line-height:1.8}
-.topic-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:40px 0 82px}
-.topic-card{min-height:205px;padding:28px;background:#1b1d22;border:1px solid #34363c;border-top:3px solid var(--red);display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start}
-.topic-card-wide{grid-column:1/-1;min-height:160px}
-.topic-number{font-size:.58rem;letter-spacing:.15em;font-weight:800;color:var(--red)}
-.topic-card h3{margin:13px 0 9px;font:800 2rem/.98 var(--display);text-transform:uppercase}
-.topic-card p{max-width:650px;margin:0;color:#c0c2c9;font-size:.78rem;line-height:1.75}
-.recent-videos{padding-top:10px}
-.recent-videos-heading{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:32px}
-.recent-videos-heading .eyebrow{margin-bottom:18px}
-.recent-videos-heading h2{margin:0;font:800 clamp(2.6rem,5vw,4.8rem)/.94 var(--display);text-transform:uppercase}
-.recent-videos-heading h2 em{font-style:normal;color:var(--red)}
-.recent-videos-heading>p{max-width:345px;color:#b9bbc2;font-size:.8rem;line-height:1.8;margin:0 0 4px}
-.video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
-.video-card{display:flex;flex-direction:column;min-width:0;background:#1b1d22;border:1px solid #33353b;transition:transform .2s,border-color .2s}
-.video-card:hover{transform:translateY(-3px);border-color:var(--red)}
-.video-card img{width:100%;aspect-ratio:16/9;object-fit:cover;background:#303238}
-.video-card>span{margin:17px 17px 0;color:var(--red);font-size:.54rem;letter-spacing:.13em;font-weight:800}
-.video-card h3{margin:8px 17px 14px;font:700 1.35rem/1.08 var(--display);text-transform:uppercase}
-.video-card small{margin:auto 17px 17px;padding-top:5px;color:#c4c6cc;font-size:.62rem;font-weight:700}
-.videos-note{margin:19px 0 0;color:#81848c;font-size:.61rem;line-height:1.6}
-@media(max-width:900px){.video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.recent-videos-heading{gap:24px}}
-@media(max-width:680px){.topic-grid{grid-template-columns:1fr;margin:28px 0 60px}.topic-card,.topic-card-wide{grid-column:auto;min-height:0;padding:23px}.topic-card h3{font-size:1.75rem}.recent-videos-heading{display:grid;grid-template-columns:1fr;gap:15px}.video-grid{grid-template-columns:1fr 1fr;gap:10px}.video-card h3{font-size:1.1rem;margin-left:12px;margin-right:12px}.video-card>span{margin-left:12px;margin-right:12px;font-size:.48rem}.video-card small{margin-left:12px;margin-right:12px}.channel-note{padding:22px 20px}}
-@media(max-width:420px){.video-grid{grid-template-columns:1fr}}
-
-  
-/* PDAM comic-road identity: hand-painted planks, ink outlines, cartographic paper */
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Rye&family=Patrick+Hand:wght@400&display=swap');
-:root{--ink:#17130e;--ink-2:#2a1d12;--paper:#f4e4bd;--paper-light:#fff2d3;--muted:#7a6850;--red:#c82619;--blue:#087ca5;--sky:#159cc5;--gold:#e5a33a;--line:rgba(32,22,12,.28);--display:'Bangers','Barlow Condensed',Impact,sans-serif;--body:'Patrick Hand','DM Sans',Arial,sans-serif}
-html{scroll-padding-top:95px}
-body{background:#dfcc9c;color:#21180f;font-family:var(--body);font-size:18px;background-image:radial-gradient(rgba(68,43,19,.14) .7px,transparent .7px);background-size:5px 5px}
-.topline{height:26px;background:#122e3b;color:#e8d7ad;font-family:var(--body);font-size:.75rem;letter-spacing:.12em}
-.site-header{background:linear-gradient(180deg,#75401e,#4b2817);border-bottom:4px solid #2d1a10;box-shadow:0 5px 0 rgba(0,0,0,.18)}
-.brand-symbol{border:3px solid #21150d;box-shadow:2px 3px 0 #c88e40}
-.brand-type strong{font-family:var(--display);font-size:2.1rem;letter-spacing:.04em;color:#fff0cb;text-shadow:2px 3px 0 #24140c}
-.brand-type small{color:#f7d28c;font-family:var(--body);font-size:.7rem;letter-spacing:.03em}
-.main-nav{gap:8px}
-.main-nav a{position:relative;padding:9px 15px;color:#28180d;font:1.05rem 'Rye',serif;background:linear-gradient(180deg,#e9bd72,#c98d42 55%,#9a5a29);border:2px solid #4b2815;box-shadow:inset 0 2px 0 rgba(255,242,194,.55),2px 3px 0 #24150d;clip-path:polygon(0 0,91% 0,100% 50%,91% 100%,0 100%,5% 50%)}
-.main-nav a:hover{background:linear-gradient(#ffe09a,#c98735);color:#20140c;transform:translateY(-2px)}
-.header-cta{background:#c5281d;border:3px solid #31180f;box-shadow:3px 4px 0 #26150d;font-family:var(--display);font-size:1.1rem;letter-spacing:.04em}
-.button{border:3px solid #301b0f;box-shadow:3px 4px 0 #2c1a10;font-family:var(--display);font-size:1.15rem;letter-spacing:.035em}
-.button:hover{background:#e2a239;border-color:#301b0f;color:#21160f}
-.button-outline{background:rgba(20,35,40,.72);border-color:#f7e7c3;color:#fff}
-.hero{min-height:680px;background:#0b769e;border-bottom:7px solid #22170e}
-.hero-photo{filter:saturate(1.45) contrast(1.12);background-position:center 53%}
-.hero-overlay{background:linear-gradient(90deg,rgba(8,27,34,.83),rgba(11,43,50,.40) 58%,rgba(21,31,27,.18)),linear-gradient(0deg,rgba(16,15,12,.66),transparent 55%)}
-.hero-content{max-width:760px;padding-top:84px}
-.eyebrow{font-family:'Rye',serif;color:#ffdfa0;letter-spacing:.08em;text-shadow:1px 2px 0 #1e130d}
-.hero h1{font-family:var(--display);letter-spacing:.015em;font-size:clamp(4.6rem,8vw,8.4rem);color:#fff0ce;text-shadow:4px 5px 0 #24160e,-2px -2px 0 #24160e,2px -2px 0 #24160e,-2px 2px 0 #24160e}
-.hero h1 em{color:#ffbd4a;text-shadow:4px 5px 0 #4a2110,-2px -2px 0 #4a2110,2px -2px 0 #4a2110,-2px 2px 0 #4a2110}
-.hero-copy{font-family:var(--body);font-size:1.25rem;line-height:1.4;color:#fff1d1;text-shadow:1px 2px 2px #24160e;max-width:570px}
-.hero-meta{font-family:'Rye',serif;color:#ffe5ad;font-size:.68rem;letter-spacing:.06em}
-.hero-index{font-family:'Rye',serif;color:#ffedc6}
-.road-signs{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(260px,.95fr);gap:5%;align-items:center;padding:48px 8% 54px;background:linear-gradient(180deg,#e8d5aa,#f3e5c2);border-bottom:6px solid #302014;overflow:hidden}
-.road-signs:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.28;background:repeating-linear-gradient(0deg,transparent 0 23px,rgba(88,51,22,.18) 24px,transparent 25px),radial-gradient(circle,rgba(25,120,150,.16) 0 2px,transparent 3px);background-size:auto,13px 13px}
-.road-sign-stack{position:relative;z-index:1;max-width:560px;padding:5px 0}
-.road-sign-post{position:absolute;z-index:0;left:calc(8% + 43px);top:26px;bottom:22px;width:23px;background:linear-gradient(90deg,#5b321a,#b97936 30%,#6d3b1c 65%,#3a2114);border:3px solid #2a170e;box-shadow:5px 4px 0 rgba(0,0,0,.19)}
-.road-sign{position:relative;z-index:1;display:grid;grid-template-columns:38px 1fr;grid-template-rows:auto auto;align-items:center;min-height:69px;width:100%;margin:9px 0;padding:8px 55px 8px 25px;color:#20140c;text-decoration:none;background:repeating-linear-gradient(0deg,rgba(55,30,13,.09) 0 2px,transparent 3px 8px),linear-gradient(180deg,#edc37a,#c99049 50%,#9b5f2d);border:3px solid #392013;box-shadow:inset 0 2px 0 rgba(255,231,174,.55),inset 0 -4px 0 rgba(69,36,15,.25),4px 5px 0 rgba(30,18,10,.45);clip-path:polygon(0 0,91% 0,100% 50%,91% 100%,0 100%,3% 50%);transform:rotate(-1deg)}
-.road-sign:nth-child(even){transform:rotate(1.2deg)}
-.road-sign span{grid-row:1/3;font:1rem 'Rye',serif;color:#f7db9a;text-shadow:1px 2px #3b2111}
-.road-sign strong{font:1.75rem/1 var(--display);letter-spacing:.03em;text-shadow:1px 1px rgba(255,224,157,.4)}
-.road-sign small{font:1rem/1.05 'Patrick Hand',cursive;color:#432713}
-.road-sign:hover{filter:brightness(1.12);transform:translateX(8px) rotate(0)}
-.road-sign-caption{position:relative;z-index:1;max-width:430px;padding:29px 30px;background:#fff0cb;border:3px solid #21170f;box-shadow:8px 8px 0 rgba(49,31,14,.25);transform:rotate(1.5deg);clip-path:polygon(2% 0,98% 2%,100% 94%,4% 100%,0 6%)}
-.road-sign-caption span{font:1rem 'Rye',serif;color:#a34f20}
-.road-sign-caption strong{display:block;margin:8px 0;font:2.5rem/.95 var(--display);color:#1d1711;text-transform:uppercase}
-.road-sign-caption small{font:1.2rem/1.35 'Patrick Hand',cursive;color:#43301d}
-.statement-strip{background:#b9291e;color:#fff0d0;border-top:4px solid #3b1c10;border-bottom:4px solid #3b1c10;font-family:var(--display);font-size:2rem;letter-spacing:.03em}
-.statement-strip strong{color:#ffe0a3}
-.section{max-width:none;padding:92px max(7%,calc((100% - 1250px)/2))}
-.about,.content,.contact{background:#f3e4bf;color:#21180f;border-bottom:5px solid #2e1d10}
-.section-kicker{font:1rem 'Rye',serif;color:#69431e;letter-spacing:.02em}
-.section-kicker span{font:1.3rem 'Bangers',sans-serif;color:#c02a1c}
-.about h2,.community h2,.content h2,.collab h2,.contact h2{font-family:var(--display);font-size:clamp(3rem,5.5vw,5.6rem);letter-spacing:.01em;text-shadow:2px 3px 0 rgba(95,58,20,.13)}
-.about h2 em,.community h2 em,.content h2 em,.collab h2 em,.contact h2 em{color:#c22a1d}
-.about-copy p{color:#4a3825;font:1.22rem/1.48 'Patrick Hand',cursive}
-.about-copy .lead{color:#20150e;font:1.45rem/1.27 'Rye',serif}
-.channel-note{background:#e5c990;border:3px solid #412917;border-left:10px solid #bb2b1d;box-shadow:5px 6px 0 rgba(60,36,16,.18)}
-.channel-note strong{font:2rem var(--display)}
-.channel-note p{color:#48321e;font:1.15rem/1.4 'Patrick Hand',cursive}
-.community{background:linear-gradient(160deg,#087da2,#07526f 72%,#103b48);color:#fff3d8;border-top:5px solid #2d1d11;border-bottom:5px solid #2d1d11}
-.community .section-kicker{color:#fff0cc}
-.community-head p{color:#fff0d2;font:1.18rem/1.45 'Patrick Hand',cursive}
-.metric-grid{border-color:rgba(255,239,205,.35)}
-.metric{border-color:rgba(255,239,205,.35)}
-.metric-platform{color:#ffd17c;font:1rem 'Rye',serif}
-.metric strong{font:3.9rem/.95 var(--display);text-shadow:2px 3px 0 rgba(0,0,0,.25)}
-.metric small{color:#fff0d0;font:1rem 'Patrick Hand',cursive}
-.performance{border:4px solid #2b190e;background:#21160f;box-shadow:7px 7px 0 rgba(0,0,0,.22)}
-.performance-label span{font:2rem var(--display);color:#ffdb98}
-.performance-label small{font:.85rem 'Rye',serif}
-.performance-stat strong{font:2.7rem var(--display);color:#ffbd4b}
-.performance-stat span{font:1rem 'Patrick Hand',cursive;color:#f3e4bf}
-.data-note{color:#d5c39d;font:.9rem 'Patrick Hand',cursive}
-.content{background:#e6d3a5}
-.content-heading>p{color:#4b3925;font:1.2rem/1.45 'Patrick Hand',cursive}
-.topic-grid{gap:18px}
-.topic-card{position:relative;min-height:225px;background:linear-gradient(145deg,#fff0cd,#e7c990);border:3px solid #2c1b10;border-top:9px solid #9c5f2a;box-shadow:6px 7px 0 rgba(60,35,14,.22);clip-path:polygon(1% 2%,98% 0,100% 96%,3% 100%,0 6%)}
-.topic-card:nth-child(even){transform:rotate(.45deg)}.topic-card:nth-child(odd){transform:rotate(-.35deg)}
-.topic-card-wide{background:linear-gradient(140deg,#d6e8dc,#a9d3ca);border-top-color:#1b5b4d}
-.topic-number{font:.9rem 'Rye',serif;color:#9e2d1c}
-.topic-card h3{font:2.35rem/.95 var(--display);color:#26180e;text-shadow:1px 2px rgba(118,68,25,.15)}
-.topic-card p{color:#49331e;font:1.18rem/1.38 'Patrick Hand',cursive}
-.recent-videos-heading h2{font-family:var(--display);color:#23170e}
-.recent-videos-heading>p{color:#493b2b;font:1.15rem/1.45 'Patrick Hand',cursive}
-.video-card{background:#fff0d0;border:3px solid #352012;box-shadow:5px 6px 0 rgba(43,25,11,.18)}
-.video-card:hover{border-color:#b22b1e;transform:translateY(-4px) rotate(-.5deg)}
-.video-card>span{font:.78rem 'Rye',serif;color:#ab2b1d}
-.video-card h3{font:1.6rem/1 'Bangers',var(--display);color:#24170f;letter-spacing:.015em}
-.video-card small{font:1rem 'Patrick Hand',cursive;color:#7e371e}
-.collab{background:linear-gradient(135deg,#f2e2b8,#d8bd85);color:#21180f;border-top:5px solid #28190f;border-bottom:5px solid #28190f}
-.collab-intro .eyebrow{color:#6d401c;text-shadow:none}
-.collab-intro>p:not(.eyebrow){color:#4b3925;font:1.2rem/1.45 'Patrick Hand',cursive}
-.collab-detail{border-top:3px solid #57321a}
-.collab-item{border-bottom:2px solid rgba(69,43,20,.28)}
-.collab-number{font:2rem var(--display);color:#b62a1d}
-.collab-item h3{font:1.9rem var(--display);color:#26180e}
-.collab-item p{font:1.1rem/1.4 'Patrick Hand',cursive;color:#4a3722}
-.editorial-rule{background:#263e3e;border:3px solid #24160d;border-left:9px solid #be2e20;box-shadow:5px 6px 0 rgba(42,25,12,.2)}
-.editorial-rule span{font:1.45rem var(--display);color:#ffe4aa}
-.editorial-rule p{font:1.08rem/1.4 'Patrick Hand',cursive;color:#fff0ce}
-.invite-band{background:#b92a1e;border-top:4px solid #29170d;border-bottom:4px solid #29170d}
-.invite-band>div>span{font:1rem 'Rye',serif}
-.invite-band h2{font:3.6rem var(--display)}
-.button-light{background:#f4dfad;color:#24180e;border:3px solid #2d1a0e}
-.contact{background:#f4e5c4}
-.contact-grid>div:first-child>p{color:#4c3925;font:1.2rem/1.45 'Patrick Hand',cursive}
-.contact-card{background:#ead09a;border:3px solid #321e10;border-top:10px solid #895127;box-shadow:7px 8px 0 rgba(43,26,11,.2)}
-.contact-label{font:.9rem 'Rye',serif;color:#74451e}
-.contact-link{border-color:rgba(66,39,17,.3)}
-.contact-link span{font:.82rem 'Rye',serif;color:#8d4c20}
-.contact-link strong{font:1.5rem 'Patrick Hand',cursive;color:#25170e}
-.contact-link:hover strong{color:#bd2b1e}
-.contact-card>small{font:1rem 'Patrick Hand',cursive;color:#76542f;border-color:rgba(66,39,17,.3)}
-.site-footer{background:#4d2918;border-top:5px solid #21140d}
-.footer-brand{color:#fff0cf;font-family:'Rye',serif}
-.footer-logo{font:3rem var(--display);color:#ffd37c;text-shadow:2px 3px 0 #21140d}
-.site-footer>p{font:1.1rem 'Patrick Hand',cursive;color:#f4ddb0}
-.footer-links a{font:.95rem 'Patrick Hand',cursive;color:#f4ddb0}
-.copyright{color:#c59d68}
-@media(max-width:900px){.main-nav{gap:5px}.main-nav a{padding:8px 10px;font-size:.85rem}.road-signs{padding-left:6%;padding-right:6%;gap:4%}.road-sign-post{left:calc(6% + 40px)}.road-sign strong{font-size:1.5rem}}
-@media(max-width:680px){
- .topline{height:25px}.site-header{height:72px}
- .main-nav{top:70px;background:#4d2918;padding:20px 6%;border-bottom:4px solid #21140d}
- .main-nav a{clip-path:none;width:100%;font-size:1rem;padding:11px 15px}
- .hero{min-height:690px}.hero-photo{background-position:65% center}
- .hero-overlay{background:linear-gradient(90deg,rgba(8,27,34,.82),rgba(8,43,50,.55)),linear-gradient(0deg,rgba(16,15,12,.73),transparent 62%)}
- .hero-content{padding:70px 6% 85px}.hero h1{font-size:clamp(4.1rem,16vw,6.1rem)}.hero-copy{font-size:1.13rem}
- .road-signs{grid-template-columns:1fr;padding:34px 6%;gap:28px}.road-sign-stack{max-width:100%;padding-left:5px}
- .road-sign-post{left:calc(6% + 42px);top:22px;bottom:auto;height:calc(100% - 360px)}
- .road-sign{min-height:61px;margin:8px 0;padding:7px 43px 7px 18px}
- .road-sign strong{font-size:1.5rem}.road-sign small{font-size:.9rem}
- .road-sign-caption{max-width:none;padding:22px 23px;margin-left:2px}.road-sign-caption strong{font-size:2.2rem}
- .section{padding:74px 6%}.about h2,.community h2,.content h2,.collab h2,.contact h2{font-size:clamp(2.8rem,12vw,4.4rem)}
- .about-copy p,.collab-intro>p:not(.eyebrow),.contact-grid>div:first-child>p{font-size:1.1rem}
- .topic-card h3{font-size:2.05rem}.video-card h3{font-size:1.35rem}.invite-band h2{font-size:2.8rem}
-}
-  </style>
-  <script src="script.js" defer></script>
+  <meta property="og:description" content="El canal para los que amamos las motos, pero también nos cuestionamos, comparamos, probamos y discutimos.">
+  <meta property="og:type" content="website">
+  <title>PDAM | Pa' Donde Apunte la Moto</title>
+  <link rel="icon" href="/assets/pdam-favicon.png">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <div class="topline"><span>COLOMBIA</span><span>MOTOS · MERCADO · VIDA MOTERA · HUMOR SIN LIBRETO</span></div>
-  <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="PDAM, inicio">
-      <span class="brand-symbol"><img src="assets/pdam-favicon.png" alt=""></span>
-      <span class="brand-type"><strong>PDAM</strong><small>PA' DONDE APUNTE LA MOTO</small></span>
-    </a>
-    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
-    <nav class="main-nav" aria-label="Navegación principal">
-      <a href="#medio">PDAM</a>
-      <a href="#comunidad">Comunidad</a>
-      <a href="#contenido">Temas</a>
-      <a href="#videos">Videos</a>
-      <a href="#alianzas">Colaboraciones</a>
-    </nav>
-    <a class="button button-small header-cta" href="#contacto">Hablemos <span>↗</span></a>
-  </header>
+  <a class="skip-link" href="#canal">Saltar al contenido</a>
 
   <main>
-    <section class="hero" id="inicio">
-      <div class="hero-photo" role="img" aria-label="Motociclista recorriendo un paisaje colombiano al atardecer"></div>
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="eyebrow"><span></span> PA' DONDE APUNTE LA MOTO · SIN LIBRETO</p>
-        <h1>MOTOS.<br><em>SIN TANTA CARRETA.</em></h1>
-        <p class="hero-copy">Precios, garantías, comparaciones, tecnología, accesorios e historias de motociclistas. Hablamos de lo que las motos prometen, de lo que cuestan y de lo que pasa cuando uno las usa de verdad. También hay carretera, destinos y paradas para comer; pero aquí el tema es todo lo que gira alrededor de una moto.</p>
-        <div class="hero-actions">
-          <a class="button" href="#medio">Así es PDAM <span>↘</span></a>
-          <a class="button button-outline" href="#contacto">Proponga una colaboración <span>↗</span></a>
+    <section class="poster-section" id="inicio" aria-label="Presentación de PDAM">
+      <div class="poster-shell">
+        <div class="poster-loading" id="poster-loading">
+          <span>PDAM</span>
+          <small>Cargando la portada…</small>
         </div>
-        <div class="hero-meta"><span class="red-dot"></span> OPINIÓN PROPIA · HUMOR COLOMBIANO · MOTOS EN LA VIDA REAL</div>
+        <img
+          id="pdam-poster"
+          class="poster-image"
+          src="/assets/pdam-home-poster.avif"
+          alt="Ilustración de PDAM: motociclista junto a su Himalayan en un paisaje de montaña, con navegación de madera para motos, precios, garantías, pruebas, equipo, viajes e historias; a la derecha se presenta el canal y abajo aparecen sus temas y comunidad."
+          width="1000"
+          height="563"
+          decoding="async"
+          fetchpriority="high"
+        >
+
+        <nav class="poster-hotspots" aria-label="Navegación de la portada ilustrada">
+          <a class="hotspot logo-hotspot" href="#inicio" aria-label="Inicio de PDAM" title="Inicio"></a>
+
+          <a class="hotspot nav-home" href="#inicio" aria-label="Inicio" title="Inicio"></a>
+          <a class="hotspot nav-channel" href="#canal" aria-label="El canal" title="El canal"></a>
+          <a class="hotspot nav-topics" href="#temas" aria-label="Temas" title="Temas"></a>
+          <a class="hotspot nav-community" href="#comunidad" aria-label="Comunidad" title="Comunidad"></a>
+          <a class="hotspot nav-collabs" href="#colaboraciones" aria-label="Colaboraciones" title="Colaboraciones"></a>
+          <a class="hotspot nav-contact" href="#contacto" aria-label="Contacto" title="Contacto"></a>
+
+          <a class="hotspot sign-motos" href="#tema-motos" aria-label="Motos"></a>
+          <a class="hotspot sign-precios" href="#tema-precios" aria-label="Precios"></a>
+          <a class="hotspot sign-garantias" href="#tema-garantias" aria-label="Garantías"></a>
+          <a class="hotspot sign-pruebas" href="#tema-pruebas" aria-label="Pruebas"></a>
+          <a class="hotspot sign-equipo" href="#tema-equipo" aria-label="Equipo"></a>
+          <a class="hotspot sign-viajes" href="#tema-viajes" aria-label="Viajes"></a>
+          <a class="hotspot sign-historias" href="#tema-historias" aria-label="Historias"></a>
+
+          <a class="hotspot poster-youtube" href="#canal" aria-label="Ver videos del canal de YouTube"></a>
+
+          <a class="hotspot topic-one" href="#tema-motos" aria-label="Análisis y comparativos de motos"></a>
+          <a class="hotspot topic-two" href="#tema-precios" aria-label="Precios, mercado y realidad en Colombia"></a>
+          <a class="hotspot topic-three" href="#tema-garantias" aria-label="Garantías, fallas y lo que casi no le dicen"></a>
+          <a class="hotspot topic-four" href="#tema-equipo" aria-label="Equipamiento y tecnología"></a>
+          <a class="hotspot topic-five" href="#tema-viajes" aria-label="Rutas, viajes y experiencias"></a>
+          <a class="hotspot topic-six" href="#tema-historias" aria-label="Historias y cultura motera"></a>
+
+          <a class="hotspot social-youtube" href="#comunidad" aria-label="Comunidad de YouTube"></a>
+          <a class="hotspot social-tiktok" href="#comunidad" aria-label="Comunidad de TikTok"></a>
+          <a class="hotspot social-instagram" href="#comunidad" aria-label="Comunidad de Instagram"></a>
+          <a class="hotspot social-facebook" href="#comunidad" aria-label="Comunidad de Facebook"></a>
+          <a class="hotspot social-views" href="#comunidad" aria-label="Visualizaciones de PDAM"></a>
+        </nav>
       </div>
-      <div class="hero-index">01 / UN MEDIO EN MOVIMIENTO</div>
+
+      <nav class="mobile-navigation" aria-label="Navegación">
+        <a href="#inicio">Inicio</a>
+        <a href="#canal">El canal</a>
+        <a href="#temas">Temas</a>
+        <a href="#comunidad">Comunidad</a>
+        <a href="#colaboraciones">Colaboraciones</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
     </section>
 
-    <section class="road-signs" aria-label="Explorar los temas de PDAM">
-      <div class="road-sign-post" aria-hidden="true"></div>
-      <div class="road-sign-stack">
-        <a class="road-sign" href="#tema-mercado"><span>01</span><strong>PRECIOS</strong><small>lo que cuesta</small></a>
-        <a class="road-sign" href="#tema-mercado"><span>02</span><strong>GARANTÍAS</strong><small>la letra pequeña</small></a>
-        <a class="road-sign" href="#tema-pruebas"><span>03</span><strong>PRUEBAS</strong><small>lo que sí funciona</small></a>
-        <a class="road-sign" href="#tema-equipo"><span>04</span><strong>EQUIPO</strong><small>¿sirve o estorba?</small></a>
-        <a class="road-sign" href="#tema-cultura"><span>05</span><strong>MUNDO MOTERO</strong><small>historias de la gente</small></a>
-        <a class="road-sign" href="#tema-viajes"><span>06</span><strong>RUTAS Y VIAJES</strong><small>también hay carretera</small></a>
+    <section class="channel-section section-wrap" id="canal">
+      <div class="section-heading">
+        <p class="eyebrow">PA' DONDE APUNTE LA MOTO</p>
+        <h1>El canal para los que amamos las motos, <em>pero no nos tragamos entero el cuento.</em></h1>
+        <p class="intro-copy">Hablamos de lo que el motociclista compra, paga, compara, usa y vive. A veces la historia empieza con una garantía; otras, con una diferencia de 24 millones, un accesorio que promete cambiarle la vida o una carretera que se veía mucho más fácil en el mapa.</p>
       </div>
-      <div class="road-sign-caption">
-        <span>SEÑOR VIAJERO,</span>
-        <strong>NO TODO AQUÍ ES VIAJAR.</strong>
-        <small>También hablamos de la moto que usted compra, paga, mantiene y disfruta.</small>
-      </div>
-    </section>
 
-    <section class="statement-strip" aria-label="Lema de PDAM">
-      <span>LA MOTO PROMETE.</span><strong>EN PDAM PREGUNTAMOS.</strong><span class="strip-mark">PDAM / SIN TANTA CARRETA</span>
-    </section>
-
-    <section class="about section" id="medio">
-      <div class="section-kicker"><span>01</span> QUIÉNES SOMOS</div>
-      <div class="about-grid">
+      <div class="video-heading">
         <div>
-          <h2>No nos quedamos con la ficha técnica.<br><em>Ni con el cuento del vendedor.</em></h2>
+          <span class="section-number">01 / EL CANAL</span>
+          <h2>Videos para mirar la moto <em>con los ojos abiertos.</em></h2>
         </div>
-        <div class="about-copy">
-          <p class="lead">PDAM — Pa' Donde Apunte la Moto es un canal que habla de motos desde el lado del motociclista, no desde el mostrador.</p>
-          <p>Aquí hablamos de garantías, precios, marcas, comparaciones, tecnología, accesorios, decisiones de compra y todo lo que puede hacer que una moto sea un negociazo… o una deuda con ruedas. Miramos la letra pequeña, ponemos las promesas a prueba y preguntamos lo que a veces nadie pregunta en el concesionario.</p>
-          <p>También hay viajes, destinos, personajes y anécdotas de carretera. Claro. Pero no somos una guía turística: nos interesa lo que vive, piensa, paga y disfruta el motociclista. Y si en el camino aparece un buen almuerzo, tampoco vamos a hacerle el feo.</p>
-          <p>Con humor colombiano, ironía y criterio propio. Porque una moto puede tener cuarenta caballos, pero eso no significa que el vendedor tenga razón.</p>
-        </div>
+        <p>Una muestra de los temas que encontrará en PDAM. No todo es viaje: también hay preguntas, comparaciones y cuentas que vale la pena sacar antes de comprar.</p>
       </div>
-      <div class="channel-note"><strong>Viajar es parte del canal. No es todo el canal.</strong><p>Un día hablamos de una garantía, otro comparamos lo que cuesta una moto y lo que realmente entrega; otro nos vamos de viaje, paramos por un tinto y volvemos con una historia. La moto es el punto de encuentro.</p></div>
+
+      <div class="video-grid">
+        <a class="video-card" href="https://www.youtube.com/watch?v=9MqGuEITSbM" target="_blank" rel="noopener noreferrer">
+          <img src="https://i.ytimg.com/vi/9MqGuEITSbM/hqdefault.jpg" alt="Miniatura: Lo que nunca le dicen sobre la garantía de su moto" loading="lazy">
+          <span>GARANTÍAS</span>
+          <h3>Lo que nunca le dicen sobre la garantía de su moto</h3>
+          <small>Ver video ↗</small>
+        </a>
+        <a class="video-card" href="https://www.youtube.com/watch?v=V6BoB0v9DHE" target="_blank" rel="noopener noreferrer">
+          <img src="https://i.ytimg.com/vi/V6BoB0v9DHE/hqdefault.jpg" alt="Miniatura: El engaño de los precios de motos en Colombia" loading="lazy">
+          <span>PRECIOS Y MERCADO</span>
+          <h3>El engaño de los precios de motos en Colombia</h3>
+          <small>Ver video ↗</small>
+        </a>
+        <a class="video-card" href="https://www.youtube.com/watch?v=31vVCcNOPpg" target="_blank" rel="noopener noreferrer">
+          <img src="https://i.ytimg.com/vi/31vVCcNOPpg/hqdefault.jpg" alt="Miniatura: El engaño de las deportivas de bajo cilindraje" loading="lazy">
+          <span>COMPARACIONES</span>
+          <h3>El engaño de las deportivas de bajo cilindraje</h3>
+          <small>Ver video ↗</small>
+        </a>
+        <a class="video-card" href="https://www.youtube.com/watch?v=W4FkbZ2RxZE" target="_blank" rel="noopener noreferrer">
+          <img src="https://i.ytimg.com/vi/W4FkbZ2RxZE/hqdefault.jpg" alt="Miniatura: ¿Realmente necesita una pantalla en la moto?" loading="lazy">
+          <span>EQUIPO Y TECNOLOGÍA</span>
+          <h3>¿Realmente necesita una pantalla en la moto?</h3>
+          <small>Ver video ↗</small>
+        </a>
+        <a class="video-card" href="https://www.youtube.com/watch?v=mE85kNhwhkg" target="_blank" rel="noopener noreferrer">
+          <img src="https://i.ytimg.com/vi/mE85kNhwhkg/hqdefault.jpg" alt="Miniatura: El engaño de las motos de aventura" loading="lazy">
+          <span>MOTOS DE AVENTURA</span>
+          <h3>El engaño de las motos de aventura</h3>
+          <small>Ver video ↗</small>
+        </a>
+        <a class="video-card" href="https://www.youtube.com/watch?v=WW856O2JzzY" target="_blank" rel="noopener noreferrer">
+          <img src="https://i.ytimg.com/vi/WW856O2JzzY/hqdefault.jpg" alt="Miniatura: Cómo planear un viaje en moto, la cruda realidad" loading="lazy">
+          <span>RUTAS Y VIAJES</span>
+          <h3>¿Cómo planear un viaje en moto? La cruda realidad</h3>
+          <small>Ver video ↗</small>
+        </a>
+      </div>
+      <p class="channel-note">La carretera también tiene su lugar. Pero antes de salir, durante el camino y cuando vuelve a casa, hay mucho más de qué hablar.</p>
     </section>
 
-    <section class="community section" id="comunidad">
-      <div class="section-kicker"><span>02</span> NUESTRA COMUNIDAD</div>
-      <div class="community-head">
-        <h2>Una comunidad que<br><em>no se traga el folleto.</em></h2>
-        <p>Motociclistas que preguntan, comparan, discuten precios, comparten experiencias y tienen criterio propio. Y que saben que comprar moto no es solamente escoger el color.</p>
+    <section class="topics-section section-wrap" id="temas">
+      <div class="section-heading compact">
+        <p class="eyebrow">02 / LOS TEMAS</p>
+        <h2>Una moto da para mucho más que <em>hablar de cilindrada.</em></h2>
       </div>
-      <div class="metric-grid">
-        <article class="metric"><span class="metric-platform">YOUTUBE</span><strong>5.110</strong><small>suscriptores</small></article>
-        <article class="metric"><span class="metric-platform">FACEBOOK</span><strong>9.913</strong><small>Me gusta de la página</small></article>
-        <article class="metric"><span class="metric-platform">INSTAGRAM</span><strong>3.593</strong><small>seguidores</small></article>
-        <article class="metric"><span class="metric-platform">TIKTOK</span><strong>3.100</strong><small>seguidores · 59.000 Me gusta</small></article>
-      </div>
-      <div class="performance">
-        <div class="performance-label"><span>LO QUE SE MUEVE EN YOUTUBE</span><small>2 AL 6 DE NOVIEMBRE DE 2026</small></div>
-        <div class="performance-stat"><strong>25.364</strong><span>visualizaciones</span></div>
-        <div class="performance-stat"><strong>886 h</strong><span>tiempo de reproducción</span></div>
-        <div class="performance-stat"><strong>+178</strong><span>suscriptores netos</span></div>
-      </div>
-      <p class="data-note">Cifras de comunidad: YouTube y Facebook actualizados al 9 de noviembre de 2026; Instagram y TikTok, última cifra registrada el 4 de noviembre de 2026. Rendimiento de YouTube: período del 2 al 6 de noviembre de 2026. Las cifras pueden variar con el tiempo.</p>
-    </section>
-
-    <section class="content section" id="contenido">
-      <div class="section-kicker"><span>03</span> LOS TEMAS DEL CANAL</div>
-      <div class="content-heading">
-        <h2>La moto es el tema.<br><em>El mundo alrededor, también.</em></h2>
-        <p>La garantía, el precio, la ficha técnica, el accesorio milagroso, el paseo que salió bien y el que terminó en taller. De eso hablamos.</p>
-      </div>
-
       <div class="topic-grid">
-        <article class="topic-card" id="tema-mercado">
-          <span class="topic-number">01 / MERCADO Y COMPRAS</span>
-          <h3>Antes de soltar la plata</h3>
-          <p>Precios, garantías, marcas, costos escondidos y decisiones de compra. Porque la emoción de estrenar dura; la cuota, bastante más.</p>
+        <article class="topic-card" id="tema-motos">
+          <span class="topic-icon">🏍</span>
+          <span class="topic-label">MOTOS</span>
+          <h3>Comparar antes de enamorarse</h3>
+          <p>Modelos, segmentos, fichas técnicas y experiencia real. Porque la foto del concesionario no paga la cuota.</p>
+        </article>
+        <article class="topic-card" id="tema-precios">
+          <span class="topic-icon">💰</span>
+          <span class="topic-label">PRECIOS Y MERCADO</span>
+          <h3>La cuenta también hace parte del viaje</h3>
+          <p>Precios en Colombia, diferencias entre mercados, costos y decisiones de compra. Saquemos la calculadora antes de sacar la tarjeta.</p>
+        </article>
+        <article class="topic-card" id="tema-garantias">
+          <span class="topic-icon">🛡</span>
+          <span class="topic-label">GARANTÍAS Y FALLAS</span>
+          <h3>La letra pequeña no se lee sola</h3>
+          <p>Garantías, problemas, mantenimientos y esas cosas que uno descubre cuando ya dejó la moto en el taller.</p>
         </article>
         <article class="topic-card" id="tema-pruebas">
-          <span class="topic-number">02 / PRUEBAS Y COMPARACIONES</span>
-          <h3>La ficha técnica no maneja</h3>
-          <p>Qué ofrece cada moto, qué se siente al usarla y si la diferencia de precio se nota en la vida real. Los caballos se cuentan; las sensaciones se comprueban.</p>
+          <span class="topic-icon">⚙</span>
+          <span class="topic-label">PRUEBAS Y COMPARACIONES</span>
+          <h3>Lo que dice el papel y lo que pasa en la vía</h3>
+          <p>Pruebas, comparativos y comportamiento real. Sin hacerle venia a una ficha técnica ni al logo del tanque.</p>
         </article>
         <article class="topic-card" id="tema-equipo">
-          <span class="topic-number">03 / EQUIPO Y TECNOLOGÍA</span>
+          <span class="topic-icon">🧰</span>
+          <span class="topic-label">EQUIPO Y TECNOLOGÍA</span>
           <h3>¿Sirve o es otro chicharrón?</h3>
-          <p>ABS, pantallas, cascos, accesorios y tecnología. Revisamos qué ayuda de verdad y qué termina siendo un adorno caro que también necesita cargador.</p>
+          <p>Cascos, accesorios, pantallas, cámaras y tecnología. Lo útil se nota; lo demás también ocupa espacio en la maleta.</p>
         </article>
-        <article class="topic-card" id="tema-cultura">
-          <span class="topic-number">04 / CULTURA MOTERA</span>
-          <h3>El motociclista viene de todos los sabores</h3>
-          <p>Personajes, costumbres, discusiones, anécdotas y humor. Desde el que lleva herramientas para desarmar media moto hasta el que sale por pan y regresa el domingo.</p>
+        <article class="topic-card" id="tema-viajes">
+          <span class="topic-icon">🗺</span>
+          <span class="topic-label">VIAJES Y EXPERIENCIAS</span>
+          <h3>También hay kilómetros por contar</h3>
+          <p>Rutas, destinos, hospedajes, restaurantes y experiencias. Lo bonito, lo complicado y lo que no aparece en la foto.</p>
         </article>
-        <article class="topic-card topic-card-wide" id="tema-viajes">
-          <span class="topic-number">05 / VIAJES Y CARRETERA</span>
-          <h3>Y sí, también salimos a conocer mundo</h3>
-          <p>Rutas, destinos, restaurantes, alojamientos y experiencias. La carretera es parte de PDAM, pero no es el único escenario: a veces la historia empieza en un concesionario y termina buscando caldo de costilla.</p>
+        <article class="topic-card topic-card-wide" id="tema-historias">
+          <span class="topic-icon">☕</span>
+          <span class="topic-label">HISTORIAS Y CULTURA MOTERA</span>
+          <h3>Los motociclistas también tenemos cuento</h3>
+          <p>Personajes, costumbres, conversaciones y situaciones de la vida motera. Con humor colombiano, opiniones y, cuando la parada lo permite, una arepa y un caldo de costilla.</p>
         </article>
-      </div>
-
-      <div class="recent-videos" id="videos">
-        <div class="recent-videos-heading">
-          <div><span class="eyebrow"><span></span> EL CANAL, SIN RESUMEN DE AGENCIA</span><h2>Estos son algunos<br><em>de nuestros cuentos recientes.</em></h2></div>
-          <p>Una muestra real de lo que la gente encuentra cuando llega a PDAM: preguntas incómodas, números, motos y la vida de quien las monta.</p>
-        </div>
-        <div class="video-grid">
-          <a class="video-card" href="https://www.youtube.com/watch?v=9MqGuEITSbM" target="_blank" rel="noopener noreferrer">
-            <img src="https://i.ytimg.com/vi/9MqGuEITSbM/hqdefault.jpg" alt="Miniatura del video Lo que nunca le dicen sobre la garantía de su moto" loading="lazy">
-            <span>GARANTÍAS · 3 NOV 2026</span><h3>Lo que nunca le dicen sobre la garantía de su moto</h3><small>Ver video ↗</small>
-          </a>
-          <a class="video-card" href="https://www.youtube.com/watch?v=V6BoB0v9DHE" target="_blank" rel="noopener noreferrer">
-            <img src="https://i.ytimg.com/vi/V6BoB0v9DHE/hqdefault.jpg" alt="Miniatura del video El engaño de los precios de motos en Colombia" loading="lazy">
-            <span>PRECIOS · 30 OCT 2026</span><h3>El engaño de los precios de motos en Colombia</h3><small>Ver video ↗</small>
-          </a>
-          <a class="video-card" href="https://www.youtube.com/watch?v=31vVCcNOPpg" target="_blank" rel="noopener noreferrer">
-            <img src="https://i.ytimg.com/vi/31vVCcNOPpg/hqdefault.jpg" alt="Miniatura del video El engaño de las deportivas de bajo cilindraje" loading="lazy">
-            <span>COMPARACIONES · 27 OCT 2026</span><h3>El engaño de las deportivas de bajo cilindraje</h3><small>Ver video ↗</small>
-          </a>
-          <a class="video-card" href="https://www.youtube.com/watch?v=W4FkbZ2RxZE" target="_blank" rel="noopener noreferrer">
-            <img src="https://i.ytimg.com/vi/W4FkbZ2RxZE/hqdefault.jpg" alt="Miniatura del video ¿Realmente necesita una pantalla en la moto?" loading="lazy">
-            <span>TECNOLOGÍA · 23 OCT 2026</span><h3>¿Realmente necesita una pantalla en la moto?</h3><small>Ver video ↗</small>
-          </a>
-          <a class="video-card" href="https://www.youtube.com/watch?v=mE85kNhwhkg" target="_blank" rel="noopener noreferrer">
-            <img src="https://i.ytimg.com/vi/mE85kNhwhkg/hqdefault.jpg" alt="Miniatura del video El engaño de las motos de aventura" loading="lazy">
-            <span>MOTOS DE AVENTURA · 20 OCT 2026</span><h3>El engaño de las motos de aventura</h3><small>Ver video ↗</small>
-          </a>
-          <a class="video-card" href="https://www.youtube.com/watch?v=WW856O2JzzY" target="_blank" rel="noopener noreferrer">
-            <img src="https://i.ytimg.com/vi/WW856O2JzzY/hqdefault.jpg" alt="Miniatura del video ¿Cómo planear un viaje en moto?" loading="lazy">
-            <span>VIAJES · 16 OCT 2026</span><h3>¿Cómo planear un viaje en moto? (La cruda realidad)</h3><small>Ver video ↗</small>
-          </a>
-        </div>
-        <p class="videos-note">Los títulos y miniaturas enlazan a publicaciones reales del canal. Esta selección muestra distintos temas de PDAM, no solamente viajes.</p>
       </div>
     </section>
 
-    <section class="collab section" id="alianzas">
-      <div class="section-kicker"><span>04</span> COLABORACIONES COMERCIALES</div>
-      <div class="collab-grid">
-        <div class="collab-intro">
-          <p class="eyebrow"><span></span> MARCAS · CONCESIONARIOS · TALLERES · LUGARES</p>
-          <h2>¿Tiene algo para<br><em>la comunidad motera?</em></h2>
-          <p>PDAM habla con motociclistas de lo que compran, usan, comparan y viven. Si tiene una marca, concesionario, taller, tienda de accesorios, restaurante, alojamiento, evento o destino que tenga algo interesante para esa comunidad, cuéntenos. Podemos conocerlo y valorar si hay una historia para nuestros canales.</p>
-          <a class="button" href="#contacto">Proponer una colaboración <span>↗</span></a>
-        </div>
-        <div class="collab-detail">
-          <div class="collab-item"><span class="collab-number">01</span><div><h3>Conocer antes de contar</h3><p>Nos acercamos desde la mirada del motociclista: qué ofrece, qué lo hace distinto, para quién puede servir y qué vale la pena saber antes de visitarlo o comprar.</p></div></div>
-          <div class="collab-item"><span class="collab-number">02</span><div><h3>Contenido en los canales de PDAM</h3><p>Una visita puede convertirse en una historia, una mención o una integración en nuestros videos y publicaciones. La presencia comercial destacada se conversa y acuerda antes de grabar.</p></div></div>
-          <div class="collab-item"><span class="collab-number">03</span><div><h3>Hagamos viable la visita</h3><p>Acceso, información, pruebas de producto o apoyo logístico pueden facilitar el contenido. Cada colaboración se define con claridad, sin compromisos improvisados ni promesas de elogios.</p></div></div>
-          <div class="editorial-rule"><span>LA COLABORACIÓN NO COMPRA NUESTRA OPINIÓN.</span><p>PDAM publica para su propia comunidad y conserva su criterio editorial. No hacemos videos institucionales por encargo ni entregamos videos o material para las redes de terceros. Lo que producimos se publica en los canales de PDAM.</p></div>
-        </div>
+    <section class="community-section section-wrap" id="comunidad">
+      <div class="community-copy">
+        <p class="eyebrow">03 / LA COMUNIDAD</p>
+        <h2>Esto no rueda <em>solo.</em></h2>
+        <p>PDAM se mueve entre YouTube, TikTok, Instagram y Facebook. Detrás de cada cifra hay gente que pregunta, comenta, compara motos y comparte sus propios cuentos.</p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat"><span class="stat-platform">YOUTUBE</span><strong>1.800</strong><small>Suscriptores</small></div>
+        <div class="stat"><span class="stat-platform">TIKTOK</span><strong>2.800</strong><small>Seguidores</small></div>
+        <div class="stat"><span class="stat-platform">INSTAGRAM</span><strong>2.600</strong><small>Seguidores</small></div>
+        <div class="stat"><span class="stat-platform">FACEBOOK</span><strong>900</strong><small>Seguidores</small></div>
+        <div class="stat stat-total"><span class="stat-platform">PDAM EN TODAS PARTES</span><strong>383.000+</strong><small>Visualizaciones totales</small></div>
       </div>
     </section>
 
-    <section class="invite-band">
-      <div><span>¿TIENE UN LUGAR QUE MEREZCA UN RATO DE CÁMARA?</span><h2>Échenos el cuento.</h2></div>
-      <a class="button button-light" href="https://wa.me/573245929902?text=Hola%2C%20quiero%20invitar%20a%20PDAM%20a%20conocer%20mi%20establecimiento%20o%20destino." target="_blank" rel="noopener noreferrer">Invitar a PDAM por WhatsApp <span>↗</span></a>
+    <section class="collab-section section-wrap" id="colaboraciones">
+      <div class="collab-main">
+        <p class="eyebrow">04 / COLABORACIONES</p>
+        <h2>¿Tiene algo que le pueda interesar <em>a un motociclista?</em></h2>
+        <p>Una marca, un concesionario, un taller, una tienda de accesorios, un restaurante, un alojamiento, un evento o un destino. Cuéntenos qué tiene y por qué podría interesarle a la comunidad de PDAM.</p>
+        <p>Podemos conocer el lugar o la propuesta y, si tiene sentido para el canal, incorporarla a nuestro contenido. La visita, la mención o una integración comercial se conversan con claridad antes de grabar.</p>
+        <a class="action-button" href="https://wa.me/573245929902?text=Hola%2C%20quiero%20proponer%20una%20colaboraci%C3%B3n%20con%20PDAM." target="_blank" rel="noopener noreferrer">Proponer una colaboración ↗</a>
+      </div>
+      <aside class="editorial-note">
+        <span>UNA COSA DEBE QUEDAR CLARA</span>
+        <h3>La colaboración no compra nuestra opinión.</h3>
+        <p>PDAM crea y publica su propio contenido para su comunidad. No hacemos videos institucionales por encargo ni entregamos videos para las redes de terceros. Una alianza comercial no convierte una opinión en elogio.</p>
+      </aside>
     </section>
 
-    <section class="contact section" id="contacto">
-      <div class="section-kicker"><span>05</span> CONTACTO COMERCIAL</div>
-      <div class="contact-grid">
-        <div><h2>Que no se quede<br><em>el cuento en el WhatsApp.</em></h2><p>Cuéntenos qué tiene entre manos: un lugar, un destino, una experiencia o una marca. Revisamos la propuesta y, si tiene sentido para PDAM, conversamos. Primero vemos qué hay para contar; después hablamos de la colaboración.</p></div>
-        <div class="contact-card">
-          <span class="contact-label">HABLEMOS CON PDAM</span>
-          <a class="contact-link" href="https://wa.me/573245929902?text=Hola%2C%20quiero%20conversar%20sobre%20una%20posible%20colaboraci%C3%B3n%20con%20PDAM." target="_blank" rel="noopener noreferrer"><span>WHATSAPP</span><strong>+57 324 592 9902 ↗</strong></a>
-          <a class="contact-link" href="mailto:padondeapuntelamoto@gmail.com?subject=Invitaci%C3%B3n%20o%20colaboraci%C3%B3n%20con%20PDAM"><span>CORREO</span><strong>padondeapuntelamoto@gmail.com ↗</strong></a>
-          <small>Pa' Donde Apunte la Moto · Colombia</small>
-        </div>
+    <section class="contact-section section-wrap" id="contacto">
+      <div>
+        <p class="eyebrow">05 / CONTACTO</p>
+        <h2>¿Tiene una propuesta? <em>Hablemos.</em></h2>
+        <p>Escríbanos y cuéntenos qué tiene en mente. Revisamos cada propuesta y conversamos si encaja con PDAM.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="contact-button whatsapp" href="https://wa.me/573245929902?text=Hola%2C%20quiero%20invitar%20a%20PDAM%20a%20conocer%20mi%20establecimiento%20o%20proyecto." target="_blank" rel="noopener noreferrer">WhatsApp · +57 324 592 9902 ↗</a>
+        <a class="contact-button email" href="mailto:padondeapuntelamoto@gmail.com?subject=Invitaci%C3%B3n%20o%20colaboraci%C3%B3n%20con%20PDAM">padondeapuntelamoto@gmail.com ↗</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <a class="footer-brand" href="#inicio"><span class="footer-logo">PDAM</span><span>PA' DONDE APUNTE LA MOTO<br><small>MEDIO INDEPENDIENTE · COLOMBIA</small></span></a>
-    <p>Motos, mercado y vida motera.<br>Con humor colombiano y criterio propio.</p>
-    <div class="footer-links"><a href="politica-privacidad.html">Política de privacidad</a><a href="eliminacion-de-datos.html">Datos personales</a><a href="#inicio">Volver arriba ↑</a></div>
-    <small class="copyright">© <span id="year"></span> PDAM · Pa' Donde Apunte la Moto.</small>
+    <a class="footer-brand" href="#inicio">PDAM · PA' DONDE APUNTE LA MOTO</a>
+    <div class="footer-links">
+      <a href="politica-privacidad.html">Política de privacidad</a>
+      <a href="eliminacion-de-datos.html">Datos personales</a>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+    <small>© PDAM · Colombia</small>
   </footer>
+
+  <script>
+    (function () {
+      const image = document.getElementById('pdam-poster');
+      const loading = document.getElementById('poster-loading');
+      function showPoster() {
+        loading.hidden = true;
+        image.classList.add('is-loaded');
+      }
+      function showError() {
+        loading.innerHTML = '<span>PDAM</span><small>No se pudo cargar la ilustración. Recargue la página.</small>';
+      }
+      if (image.complete && image.naturalWidth > 0) showPoster();
+      else {
+        image.addEventListener('load', showPoster, { once: true });
+        image.addEventListener('error', showError, { once: true });
+      }
+    })();
+  </script>t>
 </body>
 </html>
