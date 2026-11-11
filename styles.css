@@ -81,3 +81,33 @@
 .stats-note{margin:17px 0 0;color:#d7c9a9;text-align:right;font:1rem/1.35 var(--body)}
 @media(max-width:900px){.stats-note{text-align:left}}
 @media(max-width:520px){.stats-grid{grid-template-columns:1fr}.stat{min-height:108px;padding:15px 17px}.stat strong{font-size:2.6rem}.social-icon{width:30px;height:30px}}
+
+
+/* Enlaces oficiales a redes sociales: encabezado, comunidad y pie de página. */
+.header-social{display:flex;align-items:center;gap:9px;flex:none}
+.header-social a{display:inline-flex;align-items:center;justify-content:center;min-width:31px;height:31px;padding:0 5px;border:1px solid rgba(255,240,208,.42);border-radius:50%;color:#fff0d0;font:800 .62rem 'Barlow Condensed',sans-serif;letter-spacing:.02em;transition:background .18s,color .18s,border-color .18s}
+.header-social a:hover{background:var(--gold);border-color:var(--gold);color:#21170f}
+.social-card{color:inherit;text-decoration:none;transition:background .18s,transform .18s}
+.social-card:hover{background:rgba(255,255,255,.09);transform:translateY(-2px)}
+.social-card:focus-visible,.header-social a:focus-visible,.footer-social a:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+.footer-social{display:flex;flex-wrap:wrap;gap:15px}
+.footer-social a{color:#ffe2a7;font:700 1rem 'Barlow Condensed',sans-serif;text-decoration:none}
+.footer-social a:hover{color:#fff}
+@media(max-width:1200px) and (min-width:901px){
+  .site-header{padding-left:3%;padding-right:3%;gap:14px}
+  .brand{min-width:58px}
+  .header-social{gap:5px}
+  .header-social a{min-width:28px;height:28px;font-size:.56rem}
+  .main-nav{gap:clamp(9px,1.2vw,15px)}
+  .main-nav a{font-size:.88rem}
+}
+@media(max-width:900px){
+  .header-social{margin-left:auto;margin-right:10px;gap:6px}
+  .header-social a{min-width:30px;height:30px}
+  .menu-toggle{margin-left:0}
+  .footer-social{gap:18px}
+}
+@media(max-width:430px){
+  .header-social{gap:4px;margin-right:7px}
+  .header-social a{min-width:26px;height:26px;padding:0 3px;font-size:.52rem}
+}
